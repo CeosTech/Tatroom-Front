@@ -4,13 +4,14 @@ import { StatusBar } from 'react-native';
 import Presentation from './pages/Presentation';
 import Inscription from './pages/Inscription';
 import Connexion from './pages/Connexion';
+import Menu from './pages/Menu';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar barStyle = "light-content"/>
       
-      <Connexion />
+      <Menu />
       <StatusBar style="auto" />
     </View>
   );

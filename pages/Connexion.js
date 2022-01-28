@@ -42,6 +42,7 @@ const [number, onChangeNumber] = React.useState(null);
         title="INSCRIPTION"
         onPress={() => Alert.alert('Simple Button pressed')}
         color="black"
+        
       />
       
       </SafeAreaView>
@@ -49,15 +50,19 @@ const [number, onChangeNumber] = React.useState(null);
 };
 
 const styles = StyleSheet.create({
+  
   input: {
     height: 40,
     margin: 12,
     borderWidth: 1,
     padding: 10,
+    width: 250
   },
   title:{ 
     color: 'black',
     textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: 18
   },
   separator: {
     marginBottom: '5%',
