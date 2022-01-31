@@ -9,3 +9,28 @@ All projects created in Snack are publicly available, so you can easily share th
 If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.io/c/snack).
 
 Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+
+# While starting
+Make sure Expo-cli is installed :
+```bash
+expo --version
+```
+
+**If Expo-cli is not installed yet, run this command to install it :**
+```bash
+npm install --global expo-cli
+```
+
+In the command prompt, launch the command below (install all necessary libraries) :
+
+```bash
+npm install 
+```
+
+# Start de development
+To start de server, run the command below : 
+```bash
+expo start
+```
+
+Then while the server is running, tab **'d'** in the console to open developer mode.
