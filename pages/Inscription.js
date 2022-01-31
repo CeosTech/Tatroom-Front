@@ -7,7 +7,7 @@ const UselessTextInput = () => {
   const [number, onChangeNumber] = React.useState(null);
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <Text style={styles.title}>INSCRIPTION</Text>
       <TextInput
         style={styles.input}
@@ -79,6 +79,14 @@ const UselessTextInput = () => {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#F1EFE5',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: "center",
+    width: "100%",
+    height: "100%",
+},
   input: {
     height: 40,
     margin: 12,
