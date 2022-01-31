@@ -10,16 +10,21 @@ import Presentation from "./pages/Presentation";
 import Inscription from "./pages/Inscription";
 import Connexion from "./pages/Connexion";
 import Menu from "./pages/Menu";
+import Menu2 from "./pages/Menu2";
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer style={styles.container}>
-      <Stack.Navigator initialRouteName="Inscription">
+      <Stack.Navigator initialRouteName="Menu2">
         <Stack.Screen name="Presentation" component={Presentation} />
         <Stack.Screen name="Inscription" component={Inscription} />
         <Stack.Screen name="Connexion" component={Connexion} />
+        <Stack.Screen name="Menu" component={Menu} />
+
+        <Stack.Screen options={{ headerShown: false }} name="Menu2" component={Menu2} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );
