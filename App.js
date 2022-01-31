@@ -1,6 +1,8 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { StatusBar } from 'react-native';
 
+
+import Navigation from './NavigationContainer/Navigation';
 import Presentation from './pages/Presentation';
 import Inscription from './pages/Inscription';
 import Connexion from './pages/Connexion';
@@ -10,8 +12,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar barStyle = "light-content"/>
-      
-      <Menu />
+      <Navigation/>
       <StatusBar style="auto" />
     </View>
   );
