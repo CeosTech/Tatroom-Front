@@ -33,4 +33,19 @@ To start de server, run the command below :
 expo start
 ```
 
-Then while the server is running, tab **'d'** in the console to open developer mode.
+Then while the server is running, enter/tap **'d'** in the console to open developer mode.
+
+### Good to know : 
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git add [specify the files] | Add the files/modifications you want to commit : `git switch main.js`|
+| git add . | Add the all the files/modifications you want to commit |
+| git commit -m "a message" | Commit the changes and attach a message : `git commit -m "my first commit"`|
+| git push | Push the commit in the current branch |
+| git branch | Print the current branch you are in |
+| git switch [branch] | Change the current branch into another branch :  `git switch dev` |
+
+<p align="center">
+  <b>⚠️ Make sure to always develop in your own branch ⚠️</b>
+</p>
