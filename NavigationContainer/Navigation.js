@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Presentation from '../pages/Presentation';
 import Inscription from '../pages/Inscription';
 import Connexion from '../pages/Connexion';
-
+import Profil from '../pages/Profil';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +21,8 @@ function Navigation() {
 
       <Stack.Screen name="Inscription" component={Inscription} />
       <Stack.Screen name="Connexion" component={Connexion} />
+      <Stack.Screen name="Profil" component={Profil} />
+
       </Stack.Navigator>
       
     </NavigationContainer>
