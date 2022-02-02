@@ -1,21 +1,30 @@
 import React from "react";
-import { SafeAreaView, StyleSheet, TextInput , Button, Text } from "react-native";
+import {View, SafeAreaView, StyleSheet, TextInput , Button, Text} from "react-native";
+import { Icon } from 'react-native-elements';
 
 
 const UselessTextInput = () => {
   const [text, onChangeText] = React.useState("Texte");
   const [number, onChangeNumber] = React.useState(null);
-
+  
+  
   return (
+
     <SafeAreaView style={styles.container}>
+      <View style={styles.align}>
+          <Icon name= 'arrow-left'
+           type='font-awesome'
+           size='30'
+           color='black'/>
+
+          <Icon name= "pencil"
+           type='font-awesome'
+           size='30'
+           color='black'/>
+          </View>
+      
       <Text style={styles.title}>PROFIL</Text>
       <TextInput
-icon={{
-    name: 'arrow-left',
-    type: 'font-awesome',
-    size: 25,
-    color: 'black',
-  }}
         style={styles.input}
         onChangeText={onChangeNumber}
         placeholder="Nom"
@@ -58,56 +67,50 @@ icon={{
         placeholder="Mot de passe"
         keyboardType="numeric"
       />
-      {/* <TextInput
-        style={styles.input}
-        onChangeText={onChangeNumber}
-        value={number}
-        placeholder="Confirmation mot de passe"
-        keyboardType="numeric" */}
-      {/* /> */}
-      <Button
+     
+<Button
         title="Enregistrer les modifications"
+        color="black"
         onPress={() => Alert.alert('Simple Button pressed')}
       />
-
-        {/* <Text style={styles.title}>
-            Déjà un compte? Connexion
-        </Text>
-
-        <Text style={styles.title}>
-           By creating an account you agree to our.
-        </Text>
-        <Text style={styles.title}>
-            Terms of Service and Privacy Policy
-        </Text> */}
     </SafeAreaView>
+
+
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#F1EFE5',
+    backgroundColor: '#FFF',
     flex: 1,
     alignItems: 'center',
     justifyContent: "center",
     width: "100%",
     height: "100%",
+    padding: 10,
+},
+
+align: {
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  justifyContent: "space-evenly",
+  marginTop: "5%",
+  padding: 10,
+  width:"45%",
 },
   input: {
     height: 40,
     margin: 12,
     borderWidth: 1,
     padding: 10,
+    width: 250,
   },
 
   title:{ 
     color: 'black',
     textAlign: 'center',
-    margin: 20,
+   
   },
-
- 
-
 });
 
 export default UselessTextInput;

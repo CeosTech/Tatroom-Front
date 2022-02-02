@@ -9,6 +9,9 @@ import Presentation from '../pages/Presentation';
 import Inscription from '../pages/Inscription';
 import Connexion from '../pages/Connexion';
 import Profil from '../pages/Profil';
+import Profil2 from '../pages/Profil2';
+
+
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +25,8 @@ function Navigation() {
       <Stack.Screen name="Inscription" component={Inscription} />
       <Stack.Screen name="Connexion" component={Connexion} />
       <Stack.Screen name="Profil" component={Profil} />
+      <Stack.Screen name="Profil2" component={Profil2} />
+
 
       </Stack.Navigator>
       
