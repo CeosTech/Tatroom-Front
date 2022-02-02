@@ -1,6 +1,7 @@
-import React from "react";
-import { SafeAreaView, StyleSheet, TextInput , Button, Text } from "react-native";
 
+import React from "react";
+import { SafeAreaView, StyleSheet, TextInput , Button, Text , View} from "react-native";
+import { Icon, Input } from 'react-native-elements';
 
 const UselessTextInput = () => {
   const [text, onChangeText] = React.useState("Texte");
@@ -8,73 +9,76 @@ const UselessTextInput = () => {
 
   return (
     <SafeAreaView style={styles.container}>
+        <View style={styles.align}>
+            <Icon
+            name= 'arrow-left'
+            type= 'font-awesome'
+            size= '10'
+            height= '16'
+            color= 'black' 
+            
+            />
+            
+          
+        </View>
+
+      <Text style={styles.title}>Description du tatouage client</Text>
      
       <TextInput
-        style={styles.input}
-        onChangeText={onChangeNumber}
-        placeholder="Nom"
-       
+            style={styles.input}
+            onChangeText={onChangeNumber}
+            placeholder="Télécharger une image"
       />
+      
+
+      
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
-        placeholder="Prénom"
-        
-      />
-      <TextInput
-        style={styles.input}
-        onChangeText={onChangeNumber}
-        placeholder="Email"
+        placeholder="Zone à tatouer"
       />
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
         value={number}
-        placeholder="Adresse"
+        placeholder="Budget du tatouage?"
         keyboardType="numeric"
       />
+      
+      <View>
+      <Text style={styles.title}>
+            0*0 cm
+        </Text>
+        <TextInput
+        style={styles.input}
+        onChangeText={onChangeNumber}
+        placeholder="Hauteur"
+        justifyContent="space-between"
+      />
+        <Text style={styles.title}>
+            Centimètres
+        </Text>
+        <TextInput
+        style={styles.input}
+        onChangeText={onChangeNumber}
+        placeholder="Largeur"
+        justifyContent="space-between"
+      />
+      </View>
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
-        value={number}
-        placeholder="Code Postal"
-        keyboardType="numeric"
+        placeholder="Commentaires"
+       height="50"
       />
-      <TextInput
-        style={styles.input}
-        onChangeText={onChangeNumber}
-        placeholder="Ville"
-      />
-      <TextInput
-        style={styles.input}
-        onChangeText={onChangeNumber}
-        value={number}
-        placeholder="Mot de passe"
-        keyboardType="numeric"
-      />
-      <TextInput
-        style={styles.input}
-        onChangeText={onChangeNumber}
-        value={number}
-        placeholder="Confirmation mot de passe"
-        keyboardType="numeric"
-      />
+      
+
       <Button
-        title="INSCRIPTION"
+        title="ENVOYER"
         color="black"
+        
         onPress={() => Alert.alert('Simple Button pressed')}
       />
-
-        <Text style={styles.title}>
-            Déjà un compte? Connexion
-        </Text>
-
-        <Text style={styles.title}>
-           By creating an account you agree to our.
-        </Text>
-        <Text style={styles.title}>
-            Terms of Service and Privacy Policy
-        </Text>
     </SafeAreaView>
   );
 };
@@ -87,6 +91,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     width: "100%",
     height: "100%",
+     
 },
 align: {
   flexDirection: 'row',
@@ -101,6 +106,7 @@ align: {
     borderWidth: 1,
     padding: 10,
     width: "50%",
+
   },
 
   title:{ 
