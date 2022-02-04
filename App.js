@@ -16,12 +16,13 @@ import DescriptionClient from "./pages/DescriptionClient";
 import SearchBar from "./pages/Searchbar";
 
 
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer style={styles.container}>
-      <Stack.Navigator initialRouteName="SearchBar">
+      <Stack.Navigator initialRouteName="Connexion">
       
 
         <Stack.Screen  options={{ headerShown: true }} name="Presentation" component={Presentation} />
@@ -42,6 +43,7 @@ export default function App() {
         <Stack.Screen options={{ headerShown: false }} name="RendezVous" component={RendezVous} />
         <Stack.Screen options={{ headerShown: false }} name="DescriptionClient" component={DescriptionClient} />
         <Stack.Screen options={{ headerShown: false }} name="SearchBar" component={SearchBar} />
+        
       
 
         <Stack.Screen options={{ headerShown: false }} name="Menu2" component={Menu2} />
