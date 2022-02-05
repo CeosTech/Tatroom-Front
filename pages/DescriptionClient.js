@@ -18,8 +18,6 @@ const UselessTextInput = () => {
             color= 'black' 
             
             />
-            
-          
         </View>
 
       <Text style={styles.title}>Description du tatouage client</Text>
@@ -42,8 +40,6 @@ const UselessTextInput = () => {
         keyboardType="numeric"
       />
       
-      
-      
       <View style={styles.fixToText}>
       <Text style={styles.title}>
             
@@ -52,8 +48,8 @@ const UselessTextInput = () => {
         style={styles.input}
         onChangeText={onChangeNumber}
         placeholder="Hauteur en cm"
-        width="50"
-        marginHorizontal= "36"
+        
+        
       />
         <Text style={styles.title}>
             
@@ -62,14 +58,14 @@ const UselessTextInput = () => {
         style={styles.input}
         onChangeText={onChangeNumber}
         placeholder="Largeur en cm"
-        width="50"
+       
       />
       </View>
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
         placeholder="Commentaires"
-       height="50"
+        
       />
       
 
@@ -82,8 +78,8 @@ const UselessTextInput = () => {
       }}
         containerStyle={{
           width: 260,
-          marginVertical: 10,
-          marginHorizontal: 50,
+          marginVertical: 50,
+          
         }}
         titleStyle={{
           fontWeight: 'bold'
@@ -102,7 +98,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     width: "100%",
     height: "100%",
-     marginHorizontal: "16",
+    
 },
 align: {
   flexDirection: 'row',
@@ -112,7 +108,7 @@ align: {
   width: "50%",
 },
   input: {
-    height: 50,
+    height: 70,
     margin: 12,
     borderWidth: 1,
     padding: 10,
@@ -130,6 +126,8 @@ align: {
     color: 'black',
     textAlign: 'center',
     fontWeight: 'bold',
+    marginVertical: 20,
+
   },
 });
 

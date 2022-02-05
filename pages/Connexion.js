@@ -51,10 +51,7 @@ const [number, onChangeNumber] = React.useState(null);
           marginVertical: 10,
           marginHorizontal: 50,
         }}
-        titleStyle={{
-          fontWeight: 'bold',
-        }}
-        onPress={() => Alert.alert('Simple Button pressed')}
+        
       />
       <Button
         title="INSCRIPTION"
@@ -70,7 +67,6 @@ const [number, onChangeNumber] = React.useState(null);
           marginHorizontal: 50,
         }}
         titleStyle={{
-          fontWeight: 'bold',
           color: 'black',
         }}
         onPress={() => Alert.alert('Simple Button pressed')}

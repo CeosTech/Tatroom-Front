@@ -1,14 +1,17 @@
 import React from "react";
-import { SafeAreaView, StyleSheet, TextInput , Button, Text } from "react-native";
+import { SafeAreaView, StyleSheet, TextInput ,  Text, View } from "react-native";
+import {  Button } from 'react-native-elements';
 
-
+const Separator = () => (
+  <View style={styles.separator} />
+);
 const UselessTextInput = () => {
   const [text, onChangeText] = React.useState("Texte");
   const [number, onChangeNumber] = React.useState(null);
 
   return (
+    
     <SafeAreaView style={styles.container}>
-     
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
@@ -61,14 +64,29 @@ const UselessTextInput = () => {
       />
       <Button
         title="INSCRIPTION"
-        color="black"
+        buttonStyle={{ 
+        backgroundColor: 'black',
+        borderWidth: 2,
+        borderColor: 'white',
+        borderRadius: 30,
+      }}
+        containerStyle={{
+          width: 260,
+          marginVertical: 10,
+          marginHorizontal: 50,
+        }}
+        titleStyle={{
+          fontWeight: 'bold',
+        }}
         onPress={() => Alert.alert('Simple Button pressed')}
       />
-
+      
+        <View>
         <Text style={styles.title}>
             Déjà un compte? Connexion
         </Text>
-
+        </View>
+        <Separator/>
         <Text style={styles.title}>
            By creating an account you agree to our.
         </Text>
@@ -91,21 +109,22 @@ const styles = StyleSheet.create({
 align: {
   flexDirection: 'row',
   flexWrap: 'wrap',
-  justifyContent: "space-between",
-  marginTop: "5%",
-  width: "50%",
 },
   input: {
+    marginVertical: 5,
+    marginTop: 10,
     height: 40,
-    margin: 12,
+    margin: 5,
     borderWidth: 1,
-    padding: 10,
-    width: "50%",
+    width: "70%",
   },
 
   title:{ 
     color: 'black',
     textAlign: 'center',
+  },
+  separator: {
+    marginVertical: 8,
   },
 });
 

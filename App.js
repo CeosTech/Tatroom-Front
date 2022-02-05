@@ -22,7 +22,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer style={styles.container}>
-      <Stack.Navigator initialRouteName="Connexion">
+      <Stack.Navigator initialRouteName="DescriptionClient">
       
 
         <Stack.Screen  options={{ headerShown: true }} name="Presentation" component={Presentation} />
