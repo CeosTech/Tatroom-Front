@@ -1,29 +1,36 @@
-import React from "react";
-import { SafeAreaView, StyleSheet, TextInput ,  Text, View } from "react-native";
-import {  Button } from 'react-native-elements';
 
-const Separator = () => (
-  <View style={styles.separator} />
-);
+import React from "react";
+import { SafeAreaView, StyleSheet, TextInput , Button, Text , View} from "react-native";
+import { Icon } from 'react-native-elements';
+
 const UselessTextInput = () => {
   const [text, onChangeText] = React.useState("Texte");
   const [number, onChangeNumber] = React.useState(null);
 
   return (
-    
     <SafeAreaView style={styles.container}>
-      <TextInput
-        style={styles.input}
-        onChangeText={onChangeNumber}
-        placeholder="Nom"
-       
-      />
-      <TextInput
-        style={styles.input}
-        onChangeText={onChangeNumber}
-        placeholder="Prénom"
+        <View style={styles.align}>
+            <Icon
+            name= 'arrow-left'
+            type= 'font-awesome'
+            size= '25'
+            color= 'black' />
         
+          <Icon
+            name= 'times'
+            type= 'font-awesome'
+            size= '25'
+            color= 'black' />
+        </View>
+
+      <Text style={styles.title}>Créer un rendez-vous</Text>
+     
+      <TextInput
+            style={styles.input}
+            onChangeText={onChangeNumber}
+            placeholder="Nom du salon"
       />
+      
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
@@ -51,48 +58,34 @@ const UselessTextInput = () => {
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
-        value={number}
-        placeholder="Mot de passe"
-        keyboardType="numeric"
+        placeholder="Zone du corps"
       />
-      <TextInput
+      <Text style={styles.title}>
+            0*0 cm
+        </Text>
+        <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
-        value={number}
-        placeholder="Confirmation mot de passe"
-        keyboardType="numeric"
+        placeholder="Hauteur"
+      />
+        <Text style={styles.title}>
+            Centimètres
+        </Text>
+        <TextInput
+        style={styles.input}
+        onChangeText={onChangeNumber}
+        placeholder="Largeur"
       />
       <Button
-        title="INSCRIPTION"
-        buttonStyle={{ 
-        backgroundColor: 'black',
-        borderWidth: 2,
-        borderColor: 'white',
-        borderRadius: 30,
-      }}
-        containerStyle={{
-          width: 260,
-          marginVertical: 10,
-          marginHorizontal: 50,
-        }}
-        titleStyle={{
-          fontWeight: 'bold',
-        }}
+        title="ENVOYER"
+        color="black"
+        
         onPress={() => Alert.alert('Simple Button pressed')}
       />
-      
-        <View>
-        <Text style={styles.title}>
-            Déjà un compte? Connexion
-        </Text>
-        </View>
-        <Separator/>
-        <Text style={styles.title}>
-           By creating an account you agree to our.
-        </Text>
-        <Text style={styles.title}>
-            Terms of Service and Privacy Policy
-        </Text>
+
+
+
+        
     </SafeAreaView>
   );
 };
@@ -109,22 +102,22 @@ const styles = StyleSheet.create({
 align: {
   flexDirection: 'row',
   flexWrap: 'wrap',
+  justifyContent: "space-between",
+  marginTop: "5%",
+  width: "50%",
 },
   input: {
-    marginVertical: 5,
-    marginTop: 10,
     height: 40,
-    margin: 5,
+    margin: 12,
     borderWidth: 1,
-    width: "70%",
+    padding: 10,
+    width: "50%",
+
   },
 
   title:{ 
     color: 'black',
     textAlign: 'center',
-  },
-  separator: {
-    marginVertical: 8,
   },
 });
 

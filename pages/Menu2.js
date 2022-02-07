@@ -2,11 +2,15 @@
 import React, { useState } from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
 import { Button, ButtonGroup, withTheme, Text } from 'react-native-elements';
+import { Icon } from 'react-native-elements';
 
 type ButtonsComponentProps = {};
 
 const Buttons: React.FunctionComponent<ButtonsComponentProps> = () => {
   
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [selectedIndexes, setSelectedIndexes] = useState([0, 2, 3]);
+
   return (
             <View style={styles.buttonsContainer}>
 
