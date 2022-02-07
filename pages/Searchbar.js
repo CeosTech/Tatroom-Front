@@ -15,7 +15,7 @@ const SwitchComponent: React.FunctionComponent<SearchBarComponentProps> = () => 
     <View style={styles.view}>
       <SearchBar
         placeholder="Rechercher par ville..."
-        onChangeText={this.updateSearch}
+        onChangeText={setSearch}
         value={search}
       />
     </View>

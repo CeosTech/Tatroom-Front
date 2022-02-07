@@ -1,7 +1,7 @@
 
 import React from "react";
-import { SafeAreaView, StyleSheet, TextInput , Button, Text , View} from "react-native";
-import { Icon, Input } from 'react-native-elements';
+import { SafeAreaView, StyleSheet, TextInput , Text , View} from "react-native";
+import { Icon, Input, Button, } from 'react-native-elements';
 
 const UselessTextInput = () => {
   const [text, onChangeText] = React.useState("Texte");
@@ -18,8 +18,6 @@ const UselessTextInput = () => {
             color= 'black' 
             
             />
-            
-          
         </View>
 
       <Text style={styles.title}>Description du tatouage client</Text>
@@ -29,9 +27,6 @@ const UselessTextInput = () => {
             onChangeText={onChangeNumber}
             placeholder="Télécharger une image"
       />
-      
-
-      
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
@@ -45,38 +40,50 @@ const UselessTextInput = () => {
         keyboardType="numeric"
       />
       
-      <View>
+      <View style={styles.fixToText}>
       <Text style={styles.title}>
-            0*0 cm
+            
         </Text>
         <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
-        placeholder="Hauteur"
-        justifyContent="space-between"
+        placeholder="Hauteur en cm"
+        
+        
       />
         <Text style={styles.title}>
-            Centimètres
+            
         </Text>
         <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
-        placeholder="Largeur"
-        justifyContent="space-between"
+        placeholder="Largeur en cm"
+       
       />
       </View>
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
         placeholder="Commentaires"
-       height="50"
+        
       />
       
 
       <Button
         title="ENVOYER"
-        color="black"
-        
+        buttonStyle={{ backgroundColor: 'black',
+        borderWidth: 2,
+        borderColor: 'white',
+        borderRadius: 30,
+      }}
+        containerStyle={{
+          width: 260,
+          marginVertical: 50,
+          
+        }}
+        titleStyle={{
+          fontWeight: 'bold'
+        }}
         onPress={() => Alert.alert('Simple Button pressed')}
       />
     </SafeAreaView>
@@ -91,7 +98,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     width: "100%",
     height: "100%",
-     
+    
 },
 align: {
   flexDirection: 'row',
@@ -101,17 +108,26 @@ align: {
   width: "50%",
 },
   input: {
-    height: 40,
+    height: 70,
     margin: 12,
     borderWidth: 1,
     padding: 10,
-    width: "50%",
+    width: "70%",
 
+  },
+  fixToText: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center'
+    
   },
 
   title:{ 
     color: 'black',
     textAlign: 'center',
+    fontWeight: 'bold',
+    marginVertical: 20,
+
   },
 });
 
