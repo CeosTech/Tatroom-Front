@@ -8,12 +8,13 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Presentation from '../pages/Presentation';
 import Inscription from '../pages/Inscription';
 import Connexion from '../pages/Connexion';
+import Profil from '../pages/Profil';
+import Profil2 from '../pages/Profil2';
 import Menu from '../pages/Menu';
 import Menu2 from '../pages/Menu2';
 import RendezVous from '../pages/RendezVous';
 import DescriptionClient from '../pages/DescriptionClient';
 import SearchBar from '../pages/Searchbar';
-
 
 
 const Stack = createNativeStackNavigator();
@@ -27,6 +28,10 @@ function Navigation() {
 
       <Stack.Screen name="Inscription" component={Inscription} />
       <Stack.Screen name="Connexion" component={Connexion} />
+      <Stack.Screen name="Profil" component={Profil} />
+      <Stack.Screen name="Profil2" component={Profil2} />
+
+
       </Stack.Navigator>
       
     </NavigationContainer>
