@@ -14,9 +14,20 @@ const SwitchComponent: React.FunctionComponent<SearchBarComponentProps> = () => 
   return (
     <View style={styles.view}>
       <SearchBar
-        placeholder="Rechercher par ville..."
+        placeholder="Recherchez par ville ..."
         onChangeText={setSearch}
         value={search}
+        containerStyle={{
+        backgroundColor:"white",
+        border: "none",
+        height: "100%",
+        }}
+        inputContainerStyle= {{
+          backgroundColor: "white",
+          border: "3px solid #000000",
+          borderBottomWidth: 3,
+          borderRadius : 20,
+        }}
       />
     </View>
   );
@@ -24,7 +35,8 @@ const SwitchComponent: React.FunctionComponent<SearchBarComponentProps> = () => 
 
 const styles = StyleSheet.create({
   view: {
-    margin: 10,
+    backgroundColor: "white",
+    height: "100vh",
   },
 });
 
