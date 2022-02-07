@@ -9,7 +9,7 @@ const Separator = () => (
   <View style={styles.separator} ></View>
 );
 
-const UselessTextInput = ({ navigation}) => {
+const UselessTextInput = ({ navigation }) => {
 
 const [text, onChangeText] = React.useState("Texte");
 const [number, onChangeNumber] = React.useState(null);
@@ -69,7 +69,7 @@ const [number, onChangeNumber] = React.useState(null);
         titleStyle={{
           color: 'black',
         }}
-        onPress={() => Alert.alert('Simple Button pressed')}
+        onPress={() => navigation.navigate('Inscription')}
       />
       
       </SafeAreaView>
