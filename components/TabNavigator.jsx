@@ -7,6 +7,11 @@ import Profil from '../pages/ProfilTatoueur';
 import Home from "../pages/Home";
 import Reinitialisermdp from "../pages/Reinitialisermdp";
 import Popup from "../pages/Popup";
+import Popupenregrdv from "../pages/Popupenregrdv";
+import Popupenvdevis from "../pages/Popupenvdevis";
+import Inscription from "../pages/Inscription";
+
+
 
 const Tab = createBottomTabNavigator();
 

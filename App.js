@@ -20,7 +20,8 @@ import SearchBar from "./pages/Searchbar";
 import ProfilTatoueur from "./pages/ProfilTatoueur.js";
 import Reinitialisermdp from "./pages/Reinitialisermdp";
 import Popup from "./pages/Popup";
-
+import Popupenregrdv from "./pages/Popupenregrdv";
+import Popupenvdevis from "./pages/Popupenvdevis";
 
 const Stack = createNativeStackNavigator();
 

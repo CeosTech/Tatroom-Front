@@ -16,19 +16,19 @@ const App = () => {
       >
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
-            <Text style={styles.modalText}>Etes vous sur de vouloir quitter?</Text>
+            <Text style={styles.modalText}>Votre rendezvous a été enregistrer</Text>
             <Pressable
               style={[styles.button, styles.buttonClose]}
               onPress={() => setModalVisible(!modalVisible)}
             >
-              <Text style={styles.textStyle}>Annuler</Text>
+             
             </Pressable>
             
               <Pressable
               style={[styles.button, styles.buttonClose]}
               onPress={() => setModalVisible(!modalVisible)}
             >
-              <Text style={styles.textStyle}>Quitter</Text>
+             
             </Pressable>
           </View>
         </View>
@@ -37,7 +37,7 @@ const App = () => {
         style={[styles.button, styles.buttonOpen]}
         onPress={() => setModalVisible(true)}
       >
-        <Text style={styles.textStyle}>Quitter</Text>
+        <Text style={styles.textStyle}>enregistrer votre rendezvous</Text>
       </Pressable>
     </View>
   );
@@ -59,26 +59,23 @@ const styles = StyleSheet.create({
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 4,
-     
-      
+      height: 4
     },
     shadowOpacity: 0.25,
     shadowRadius: 4,
     elevation: 5
   },
   button: {
-    borderRadius: 20,
+  
     padding: 10,
-    elevation: 2,
-    padding: 10,
+    elevation: 2
   },
   buttonOpen: {
-    backgroundColor: "black",
+  backgroundColor: "black",
   },
-  buttonClose: {
-    backgroundColor: "black",
-  },
+  // buttonClose: {
+  //   backgroundColor: "black",
+  // },
   textStyle: {
     color: "white",
     fontWeight: "bold",
@@ -87,7 +84,6 @@ const styles = StyleSheet.create({
   modalText: {
     marginBottom: 15,
     textAlign: "center"
-
   
   }
 });
