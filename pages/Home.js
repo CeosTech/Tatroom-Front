@@ -14,18 +14,17 @@ import RendezVous from "./RendezVous";
 import DescriptionClient from "./DescriptionClient";
 import SearchBar from "./Searchbar.js";
 import ProfilTatoueur from "./ProfilTatoueur.js";
-
-
-
+import Reinitialisermdp from "./Reinitialisermdp";
+import Popup from "./Popup";
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
 
   return (
-        <Stack.Navigator initialRouteName="Searchbar">
+        <Stack.Navigator initialRouteName="Popup">
 
-          <Stack.Screen options={{ headerShown: true }} name="Menu" component={Menu} />
+          <Stack.Screen options={{ headerShown: false }} name="Menu" component={Menu} />
           <Stack.Screen
             options={{
               headerShown: true,
@@ -42,7 +41,9 @@ export default function App() {
             component={SearchBar}
           />
           <Stack.Screen options={{ headerShown: false }} name="Profil" component={Profil} />
-
+          <Stack.Screen options={{ headerShown: false }} name="Popup" component={Popup} />
+        
+        
         </Stack.Navigator>
   );
 }

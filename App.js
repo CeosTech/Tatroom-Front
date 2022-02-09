@@ -18,8 +18,8 @@ import RendezVous from "./pages/RendezVous";
 import DescriptionClient from "./pages/DescriptionClient";
 import SearchBar from "./pages/Searchbar";
 import ProfilTatoueur from "./pages/ProfilTatoueur.js";
-
-
+import Reinitialisermdp from "./pages/Reinitialisermdp";
+import Popup from "./pages/Popup";
 
 
 const Stack = createNativeStackNavigator();

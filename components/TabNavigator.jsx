@@ -5,12 +5,14 @@ import { Icon } from 'react-native-elements';
 import SearchBar from '../pages/Searchbar';
 import Profil from '../pages/ProfilTatoueur';
 import Home from "../pages/Home";
+import Reinitialisermdp from "../pages/Reinitialisermdp";
+import Popup from "../pages/Popup";
 
 const Tab = createBottomTabNavigator();
 
 const TabNavigator = () => {
   return (
-    <Tab.Navigator initialRouteName="Rechercher" >
+    <Tab.Navigator initialRouteName="Profil" >
       <Tab.Screen name="Rechercher" component={Home} 
         options={{ 
           headerShown: false, 
@@ -24,6 +26,26 @@ const TabNavigator = () => {
             }, 
         }} 
       />
+
+<Tab.Screen name="calendar" component={Profil} 
+        options={{ 
+          headerShown: true, 
+          tabBarActiveTintColor: '#000',
+          tabBarIcon: ({ color, size }) => (
+            <Icon type="font-awesome" name="calendar" color={color} size={size} />
+          ),
+          headerStyle: {
+            backgroundColor: '#000',
+          }, 
+          headerTitleStyle: {
+            color: "white",
+            headerTitleAlign: 'center',
+          }
+        }} 
+      />
+
+
+
       <Tab.Screen name="Profil" component={Profil} 
         options={{ 
           headerShown: true, 
@@ -40,6 +62,9 @@ const TabNavigator = () => {
           }
         }} 
       />
+
+
+
     </Tab.Navigator>
   );
 };
