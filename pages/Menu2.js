@@ -26,105 +26,158 @@ const Buttons: React.FunctionComponent<ButtonsComponentProps> = () => {
                 icon={{
                   name: 'arrow-left',
                   type: 'font-awesome',
-                  size: 25,
+                  size: 15,
                   color: 'black',
                 }}
                 iconLeft
                 iconContainerStyle={{ marginLeft: -45, marginRight: 80 }}
               />
+             
               <Button
-                containerStyle={{
-                  width: 200,
-                  marginHorizontal: 50,
-                  marginVertical: 10,
-                }}
+
                 title="Langue"
-                type="clear"
-                titleStyle={{ color: 'black' }}
-                icon={{
-                  name: 'arrow-right',
-                  type: 'font-awesome',
-                  size: 15,
-                  color: 'black',
-                }}
+                loading={false}
+                loadingProps={{ size: 'small', color: 'white' }}
                 iconRight
-                iconContainerStyle={{ marginLeft: 10, marginRight: -10 }}
+                icon={
+                {
+                  name: "angle-right",
+                  type: "font-awesome",
+                }
+                }
+                 titleStyle={{
+                  color: 'black',
+                  marginHorizontal: 20,
+                }}
+                buttonStyle={{
+                  backgroundColor: "white",
+                  justifyContent: "space-between",
+                  borderRadius: 5,
+                  height: 70,
+                }}
+                containerStyle={{
+                  height: 70,
+                  width: "100%",
+                  borderBottom: "2px solid black",
+                }}
+                onPress={() => console.log('aye')}
               />
 
               <Button
-                containerStyle={{
-                  width: 200,
-                  marginHorizontal: 50,
-                  marginVertical: 10,
-                }}
-                title="Évaluer l'application"
-                type="clear"
-                titleStyle={{ color: 'black' }}
-                icon={{
-                  name: 'arrow-right',
-                  type: 'font-awesome',
-                  size: 15,
-                  color: 'black',
-                }}
+                title="Evaluer l'application"
+                loading={false}
+                loadingProps={{ size: 'small', color: 'white' }}
                 iconRight
-                iconContainerStyle={{ marginLeft: 10, marginRight: -10 }}
+                icon={
+                {
+                  name: "angle-right",
+                  type: "font-awesome",
+                }
+                }
+                 titleStyle={{
+                  color: 'black',
+                  marginHorizontal: 20,
+                }}
+                buttonStyle={{
+                  backgroundColor: "white",
+                  justifyContent: "space-between",
+                  borderRadius: 5,
+                  height: 70,
+                }}
+                containerStyle={{
+                  height: 70,
+                  width: "100%",
+                  borderBottom: "2px solid black",
+                }}
+                onPress={() => console.log('aye')}
               />
 
               <Button
-                containerStyle={{
-                  width: 200,
-                  marginHorizontal: 50,
-                  marginVertical: 10,
-                }}
+
                 title="Donner votre avis"
-                type="clear"
-                titleStyle={{ color: 'black' }}
-                icon={{
-                  name: 'arrow-right',
-                  type: 'font-awesome',
-                  size: 15,
-                  color: 'black',
-                }}
+                loading={false}
+                loadingProps={{ size: 'small', color: 'white' }}
                 iconRight
-                iconContainerStyle={{ marginLeft: 10, marginRight: -10 }}
-              />
-
-              <Button
-                containerStyle={{
-                  width: 200,
-                  marginHorizontal: 50,
-                  marginVertical: 10,
-                }}
-                title="Termes & Conditions"
-                type="clear"
-                titleStyle={{ color: 'black' }}
-                icon={{
-                  name: 'arrow-right',
-                  type: 'font-awesome',
-                  size: 15,
+                icon={
+                {
+                  name: "angle-right",
+                  type: "font-awesome",
+                }
+                }
+                 titleStyle={{
                   color: 'black',
+                  marginHorizontal: 20,
                 }}
-                iconRight
-                iconContainerStyle={{ marginLeft: 10, marginRight: -10 }}
-              />
-
-              <Button
+                buttonStyle={{
+                  backgroundColor: "white",
+                  justifyContent: "space-between",
+                  borderRadius: 5,
+                  height: 70,
+                }}
                 containerStyle={{
-                  width: 200,
-                  marginHorizontal: 50,
-                  marginVertical: 10,
+                  height: 70,
+                  width: "100%",
+                  borderBottom: "2px solid black",
                 }}
+                onPress={() => console.log('aye')}
+              />
+              
+              <Button
+                title="Termes & conditions"
+                loading={false}
+                loadingProps={{ size: 'small', color: 'white' }}
+                iconRight
+                icon={
+                {
+                  name: "angle-right",
+                  type: "font-awesome",
+                }
+                }
+                 titleStyle={{
+                  color: 'black',
+                  marginHorizontal: 20,
+                }}
+                buttonStyle={{
+                  backgroundColor: "white",
+                  justifyContent: "space-between",
+                  borderRadius: 5,
+                  height: 70,
+                }}
+                containerStyle={{
+                  height: 70,
+                  width: "100%",
+                  borderBottom: "2px solid black",
+                }}
+                onPress={() => console.log('aye')}
+              />
+              <Button
                 title="Déconnexion"
-                type="clear"
-                titleStyle={{ color: 'black' }}
-                icon={{
-                  name: 'arrow-right',
-                  type: 'font-awesome',
-                  size: 15,
-                  color: 'black',
-                }}
+                loading={false}
+                loadingProps={{ size: 'small', color: 'white' }}
                 iconRight
-                iconContainerStyle={{ marginLeft: 10, marginRight: -10 }}
+                icon={
+                {
+                  name: "angle-right",
+                  type: "font-awesome",
+                }
+                }
+                 titleStyle={{
+                  color: 'black',
+                  marginHorizontal: 20,
+                }}
+                buttonStyle={{
+                  backgroundColor: "white",
+                  justifyContent: "space-between",
+                  borderRadius: 5,
+                  height: 70,
+                  
+                }}
+                containerStyle={{
+                  height: 70,
+                  width: "100%",
+                  borderBottom: "2px solid black",
+                }}
+                onPress={() => console.log('aye')}
               />
             </View>
        
@@ -132,17 +185,20 @@ const Buttons: React.FunctionComponent<ButtonsComponentProps> = () => {
   );
 };
 const styles = StyleSheet.create({
-  contentView: {
-    flex: 1,
-  },
+  
   buttonsContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%',
-    marginVertical: 20,
-  
+    backgroundColor: 'white',
+  },
+  container: {
+    
+    backgroundColor: "white",
+    //justifyContent: "center",
+    
   }
 });
 

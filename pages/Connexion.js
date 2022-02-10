@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, {useEffect} from "react";
 import { SafeAreaView, StyleSheet, TextInput , Text, View } from "react-native";
 import {  Button, withTheme } from 'react-native-elements';
 
@@ -9,10 +9,16 @@ const Separator = () => (
   <View style={styles.separator} ></View>
 );
 
-const UselessTextInput = ({ navigation }) => {
+const UselessTextInput = ({ navigation, route }) => {
 
 const [text, onChangeText] = React.useState("Texte");
 const [number, onChangeNumber] = React.useState(null);
+
+useEffect(() => {
+  console.log("======================")
+  console.log(navigation)
+  console.log(route.params)
+})
 
   return (
     <SafeAreaView>
@@ -40,7 +46,7 @@ const [number, onChangeNumber] = React.useState(null);
       <Separator/>
 
       <Button
-        title="CONNEXION"
+        title="Se connecter"
         buttonStyle={{ backgroundColor: 'black',
         borderWidth: 2,
         borderColor: 'white',
@@ -49,28 +55,38 @@ const [number, onChangeNumber] = React.useState(null);
         containerStyle={{
           width: 260,
           marginVertical: 10,
-          marginHorizontal: 50,
+          marginHorizontal: 70,
         }}
-        
+        onPress={() => route.params.setIsLogged(false)}
       />
+      <Text style={styles.title}>
+         OU
+      </Text>
+      <Text style={styles.title}>
+         Se connecter en tant que tatoueur ?
+      </Text>
+
       <Button
-        title="INSCRIPTION"
+        title="S'inscrire"
         buttonStyle={{ borderColor: 'black',
         borderRadius: 30,
         borderWidth: 2,
       }}
       type="outline"
-      
         containerStyle={{
           width: 260,
           marginVertical: 10,
-          marginHorizontal: 50,
+          marginHorizontal: 70,
         }}
         titleStyle={{
           color: 'black',
         }}
         onPress={() => navigation.navigate('Inscription')}
       />
+
+      <Text style={styles.title}>
+         Pas encore inscrit ?
+      </Text>
       
       </SafeAreaView>
   );
@@ -96,11 +112,19 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 10,
     marginVertical: 10,
+
     },
-  
+    button: {
+    alignItems: 'center',
+
+    },
   separator: {
     marginBottom: '15%',
-  }
+  },
+  Saview: {
+    backgroundColor: "white",
+    height: "100vh",
+  },
 });
 
 export default UselessTextInput;

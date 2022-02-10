@@ -1,14 +1,13 @@
 import React from "react";
 import {View, SafeAreaView, StyleSheet, TextInput , Button, Text} from "react-native";
 import { Icon } from 'react-native-elements';
+  
+import DescriptionFavoris from "../components/DescriptionFavoris";
 
-
-import DescriptionTatoueur from "../components/DescriptionTatoueur"
-
-const ProfilTatoueur = () =>{
+const Favoris = () =>{
     return (
         <SafeAreaView style={styles.container}>
-            <DescriptionTatoueur />
+            <DescriptionFavoris/>
         </SafeAreaView>
     )
 }
@@ -16,13 +15,17 @@ const ProfilTatoueur = () =>{
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "black",
+        backgroundColor: "white",
         //justifyContent: "center",
         alignItems: 'center',
+        
     },
     title: {
-        color: "white",
-    }
-})
+        color: "black",
+        fontSize: "1.5em",
+        fontWeight: "bold",
+       
+    },
+});
 
-export default ProfilTatoueur;
+export default Favoris;
