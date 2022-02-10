@@ -25,7 +25,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
 
   return (
-        <Stack.Navigator initialRouteName="Popupenregrdv">
+        <Stack.Navigator initialRouteName="Popup">
 
           <Stack.Screen options={{ headerShown: false }} name="Menu" component={Menu} />
           <Stack.Screen
@@ -44,7 +44,7 @@ export default function App() {
             component={SearchBar}
           />
           <Stack.Screen options={{ headerShown: false }} name="Profil" component={Profil} />
-          <Stack.Screen options={{ headerShown: false }} name="Popupenregrdv" component={Popupenregrdv} />
+          <Stack.Screen options={{ headerShown: false }} name="Popup" component={Popup} />
          
         
         
