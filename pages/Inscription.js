@@ -5,13 +5,16 @@ import {  Button } from 'react-native-elements';
 const Separator = () => (
   <View style={styles.separator} />
 );
-const UselessTextInput = () => {
+const UselessTextInput = ({ navigation }) => {
   const [text, onChangeText] = React.useState("Texte");
   const [number, onChangeNumber] = React.useState(null);
 
   return (
     
     <SafeAreaView style={styles.container}>
+     
+      <Text style={styles.baseText}>INSCRIPTION</Text>
+
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
@@ -63,7 +66,7 @@ const UselessTextInput = () => {
         keyboardType="numeric"
       />
       <Button
-        title="INSCRIPTION"
+        title="S'inscrire"
         buttonStyle={{ 
         backgroundColor: 'black',
         borderWidth: 2,
@@ -78,13 +81,17 @@ const UselessTextInput = () => {
         titleStyle={{
           fontWeight: 'bold',
         }}
-        onPress={() => Alert.alert('Simple Button pressed')}
+       
+        
+        
       />
       
         <View>
-        <Text style={styles.title}>
+        <Text style={styles.title} onPress={() => navigation.navigate('Connexion')}>
             Déjà un compte? Connexion
+           
         </Text>
+       
         </View>
         <Separator/>
         <Text style={styles.title}>
@@ -122,9 +129,16 @@ align: {
   title:{ 
     color: 'black',
     textAlign: 'center',
+    
   },
   separator: {
     marginVertical: 8,
+  },
+  baseText: {
+    fontWeight: 'bold',
+    fontSize: 20,
+    marginVertical: 10,
+
   },
 });
 

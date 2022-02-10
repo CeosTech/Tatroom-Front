@@ -1,6 +1,6 @@
 import React from "react";
-import {View, SafeAreaView, StyleSheet, TextInput , Button, Text} from "react-native";
-import { Icon } from 'react-native-elements';
+import {View, SafeAreaView, StyleSheet, TextInput , Text} from "react-native";
+import { Icon , Button} from 'react-native-elements';
 
 
 const UselessTextInput = () => {
@@ -11,23 +11,15 @@ const UselessTextInput = () => {
   return (
 
     <SafeAreaView style={styles.container}>
-      <View style={styles.align}>
-          <Icon name= 'arrow-left'
-           type='font-awesome'
-           size='30'
-           color='black'/>
-
-          <Icon name= "pencil"
-           type='font-awesome'
-           size='30'
-           color='black'/>
-          </View>
+      
+          
       
       <Text style={styles.title}>PROFIL</Text>
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
-        placeholder="Nom"
+        placeholder="Nom" 
+
        
       />
       <TextInput
@@ -68,14 +60,23 @@ const UselessTextInput = () => {
         keyboardType="numeric"
       />
      
-<Button
+      <Button
         title="Enregistrer les modifications"
         color="black"
+        style={
+          styles.button
+        }
+        buttonStyle={{ backgroundColor: 'rgba(39, 39, 39, 1)' }}
+        onPress={() => Alert.alert('Simple Button pressed')}
+      />
+      
+      <Button
+        title="Se déconnecter"
+        color="black"
+        buttonStyle={{ backgroundColor: 'rgba(39, 39, 39, 1)' }}
         onPress={() => Alert.alert('Simple Button pressed')}
       />
     </SafeAreaView>
-
-
   );
 };
 
@@ -88,6 +89,10 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
     padding: 10,
+},
+button: {
+  marginBottom: "50%",
+ 
 },
 
 align: {
@@ -109,7 +114,8 @@ align: {
   title:{ 
     color: 'black',
     textAlign: 'center',
-   
+    fontSize:  '2em' ,
+    fontWeight: 'bold',
   },
 });
 

@@ -25,7 +25,7 @@ import ProfilTatoueur from "./pages/ProfilTatoueur.js";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const [isLogged, setIsLogged] = useState(false)
+  const [isLogged, setIsLogged] = useState(true)
 
   return (
     <NavigationContainer style={styles.container}>
@@ -45,7 +45,7 @@ export default function App() {
             name="Inscription"
             component={Inscription}
           />
-          <Stack.Screen options={{ headerShown: false }} name="Connexion" component={Connexion} />
+          <Stack.Screen options={{ headerShown: false }} name="Connexion" component={Connexion} initialParams={{setIsLogged}} />
 
         </Stack.Navigator>
         :

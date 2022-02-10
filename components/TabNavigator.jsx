@@ -3,14 +3,14 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Icon } from 'react-native-elements';
 
 import SearchBar from '../pages/Searchbar';
-import Profil from '../pages/ProfilTatoueur';
+import Profil from '../pages/Profil';
 import Home from "../pages/Home";
 
 const Tab = createBottomTabNavigator();
 
 const TabNavigator = () => {
   return (
-    <Tab.Navigator initialRouteName="Rechercher" >
+    <Tab.Navigator initialRouteName="Search" >
       <Tab.Screen name="Rechercher" component={Home} 
         options={{ 
           headerShown: false, 
@@ -27,7 +27,7 @@ const TabNavigator = () => {
       <Tab.Screen name="Profil" component={Profil} 
         options={{ 
           headerShown: true, 
-          tabBarActiveTintColor: '#000',
+          tabBarActiveTintColor: '#fff',
           tabBarIcon: ({ color, size }) => (
             <Icon type="font-awesome" name="user" color={color} size={size} />
           ),
