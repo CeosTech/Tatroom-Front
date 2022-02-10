@@ -17,7 +17,7 @@ import ProfilTatoueur from "./ProfilTatoueur.js";
 import Reinitialisermdp from "./Reinitialisermdp";
 import Popupdeconnection from "./Popupdeconnection";
 import Popupmodif from "./Popupmodif";
-import Popupcomptecréer from "./Popupcomptecréer";
+import Popupcomptecreer from "./Popupcomptecreer";
 
 
 const Stack = createNativeStackNavigator();
