@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     },
     list: {
         width: '100%',
-        backgroundColor: 'black',
+        /* backgroundColor: 'black', */
     },
     item: {
         aspectRatio: 1,
