@@ -14,12 +14,14 @@ import RendezVous from "./RendezVous";
 import DescriptionClient from "./DescriptionClient";
 import SearchBar from "./Searchbar.js";
 import ProfilTatoueur from "./ProfilTatoueur.js";
+import Reinitialisermdp from "./Reinitialisermdp";
+import Popupdeconnection from "./Popupdeconnection";
+import Popupmodif from "./Popupmodif";
+import Popupcomptecreer from "./Popupcomptecreer";
 import Inscription from "./Inscription";
 import Presentation from "./Presentation";
 import Connexion from "./Connexion";
 import Favoris from "./Favoris";
-
-
 
 
 const Stack = createNativeStackNavigator();
@@ -27,8 +29,12 @@ const Stack = createNativeStackNavigator();
 export default function App() {
 
   return (
+
         <Stack.Navigator initialRouteName="Inscription">
         
+
+<Stack.Navigator initialRouteName="SearchBar">
+
 
           <Stack.Screen options={{ headerShown: false }} name="Menu" component={Menu} />
           <Stack.Screen
@@ -53,11 +59,11 @@ export default function App() {
           <Stack.Screen options={{ headerShown: false }} name="DescriptionClient" component={DescriptionClient} />
           <Stack.Screen options={{ headerShown: false }} name="SearchBar" component={SearchBar} />
           <Stack.Screen options={{ headerShown: false }} name="Profil" component={Profil} />
+          <Stack.Screen options={{ headerShown: false }} name="Popupdeconnection" component={Popupdeconnection} />
           <Stack.Screen options={{ headerShown: true }} name="ProfilTatoueur" component={ProfilTatoueur} />
           
           <Stack.Screen options={{ headerShown: false }} name="RendezVous" component={RendezVous} />
           <Stack.Screen options={{ headerShown: false }} name="Favoris" component={Favoris} />
-          
         </Stack.Navigator>
   );
 }
