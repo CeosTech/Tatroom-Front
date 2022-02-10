@@ -11,9 +11,6 @@ const UselessTextInput = () => {
   return (
 
     <SafeAreaView style={styles.container}>
-      
-          
-      
       <Text style={styles.title}>PROFIL</Text>
       <TextInput
         style={styles.input}

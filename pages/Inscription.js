@@ -64,6 +64,7 @@ const UselessTextInput = ({ navigation }) => {
         value={number}
         placeholder="Confirmation mot de passe"
         keyboardType="numeric"
+      
       />
       <Button
         title="S'inscrire"
@@ -81,9 +82,7 @@ const UselessTextInput = ({ navigation }) => {
         titleStyle={{
           fontWeight: 'bold',
         }}
-       
-        
-        
+        onPress={() => navigation.navigate('Popupcomptecreer')}
       />
       
         <View>

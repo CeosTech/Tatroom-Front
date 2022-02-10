@@ -26,7 +26,7 @@ import Popupcomptecreer from "./pages/Popupcomptecreer";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const [isLogged, setIsLogged] = useState(true)
+  const [isLogged, setIsLogged] = useState(false)
 
   return (
     <NavigationContainer style={styles.container}>
