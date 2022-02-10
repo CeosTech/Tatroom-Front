@@ -27,7 +27,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
 
   return (
-        <Stack.Navigator initialRouteName="SearchBar">
+        <Stack.Navigator initialRouteName="Inscription">
         
 
           <Stack.Screen options={{ headerShown: false }} name="Menu" component={Menu} />
