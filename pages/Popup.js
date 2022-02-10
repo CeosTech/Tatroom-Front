@@ -28,7 +28,7 @@ const App = () => {
               style={[styles.button, styles.buttonClose]}
               onPress={() => setModalVisible(!modalVisible)}
             >
-              <Text style={styles.textStyle}>Quitter</Text>
+              <Text style={styles.textStyle}>Confirmer</Text>
             </Pressable>
           </View>
         </View>
@@ -48,20 +48,19 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 22
+    marginTop: 22,
+    
   },
   modalView: {
-    margin: 20,
+    margin: 30,
     backgroundColor: "white",
     borderRadius: 20,
-    padding: 35,
+    padding: 30,
     alignItems: "center",
     shadowColor: "#000",
     shadowOffset: {
-      width: 0,
-      height: 4,
-     
-      
+    width: 0,
+    height: 4,
     },
     shadowOpacity: 0.25,
     shadowRadius: 4,
@@ -72,12 +71,16 @@ const styles = StyleSheet.create({
     padding: 10,
     elevation: 2,
     padding: 10,
+    marginBottom: 5,
+    
   },
   buttonOpen: {
     backgroundColor: "black",
+    
   },
   buttonClose: {
     backgroundColor: "black",
+    
   },
   textStyle: {
     color: "white",
@@ -87,7 +90,7 @@ const styles = StyleSheet.create({
   modalText: {
     marginBottom: 15,
     textAlign: "center"
-
+    
   
   }
 });

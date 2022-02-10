@@ -17,8 +17,8 @@ const App = () => {
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
           
-          <Text style={styles.modalText}>Soho Ink Devis</Text>
-            <Text style={styles.modalText}>Devis envoyer</Text>
+          
+            <Text style={styles.modalText}>Votre compte a été créer</Text>
             <Pressable
               style={[styles.button, styles.buttonClose]}
               onPress={() => setModalVisible(!modalVisible)}
@@ -39,7 +39,7 @@ const App = () => {
         style={[styles.button, styles.buttonOpen]}
         onPress={() => setModalVisible(true)}
       >
-        <Text style={styles.textStyle}>envoyer devis</Text>
+        <Text style={styles.textStyle}>Créer Compte</Text>
       </Pressable>
     </View>
     

@@ -31,7 +31,7 @@ export default function App() {
   return (
     <NavigationContainer style={styles.container}>
       {isLogged ?
-        <Stack.Navigator initialRouteName="Connexion">
+        <Stack.Navigator initialRouteName="Profil">
 
           <Stack.Screen options={{ headerShown: true }} name="Presentation" component={Presentation} />
           <Stack.Screen
@@ -46,7 +46,7 @@ export default function App() {
             name="Inscription"
             component={Inscription}
           />
-          <Stack.Screen options={{ headerShown: false }} name="Connexion" component={Connexion} />
+          <Stack.Screen options={{ headerShown: false }} name="Profil" component={Profil} />
 
         </Stack.Navigator>
         :

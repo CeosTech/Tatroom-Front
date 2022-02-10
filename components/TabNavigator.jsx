@@ -32,22 +32,7 @@ const TabNavigator = () => {
         }} 
       />
 
-<Tab.Screen name="calendar" component={Profil} 
-        options={{ 
-          headerShown: true, 
-          tabBarActiveTintColor: '#000',
-          tabBarIcon: ({ color, size }) => (
-            <Icon type="font-awesome" name="calendar" color={color} size={size} />
-          ),
-          headerStyle: {
-            backgroundColor: '#000',
-          }, 
-          headerTitleStyle: {
-            color: "white",
-            headerTitleAlign: 'center',
-          }
-        }} 
-      />
+
 
 
 

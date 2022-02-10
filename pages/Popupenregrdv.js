@@ -16,7 +16,8 @@ const App = () => {
       >
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
-            <Text style={styles.modalText}>Votre rendezvous a été enregistrer</Text>
+            <Text style={styles.modalText}>Votre compte a été modifier</Text>
+            
             <Pressable
               style={[styles.button, styles.buttonClose]}
               onPress={() => setModalVisible(!modalVisible)}
@@ -37,7 +38,7 @@ const App = () => {
         style={[styles.button, styles.buttonOpen]}
         onPress={() => setModalVisible(true)}
       >
-        <Text style={styles.textStyle}>enregistrer votre rendezvous</Text>
+        <Text style={styles.textStyle}>enregistrer les modification</Text>
       </Pressable>
     </View>
   );
