@@ -15,9 +15,9 @@ import DescriptionClient from "./DescriptionClient";
 import SearchBar from "./Searchbar.js";
 import ProfilTatoueur from "./ProfilTatoueur.js";
 import Reinitialisermdp from "./Reinitialisermdp";
-import Popup from "./Popup";
-import Popupenregrdv from "./Popupenregrdv";
-import Popupenvdevis from "./Popupenvdevis";
+import Popupdeconnection from "./Popupdeconnection";
+import Popupmodif from "./Popupmodif";
+import Popupcomptecréer from "./Popupcomptecréer";
 
 
 const Stack = createNativeStackNavigator();
@@ -25,7 +25,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
 
   return (
-        <Stack.Navigator initialRouteName="Popup">
+        <Stack.Navigator initialRouteName="Popupdeconnection">
 
           <Stack.Screen options={{ headerShown: false }} name="Menu" component={Menu} />
           <Stack.Screen
@@ -44,7 +44,7 @@ export default function App() {
             component={SearchBar}
           />
           <Stack.Screen options={{ headerShown: false }} name="Profil" component={Profil} />
-          <Stack.Screen options={{ headerShown: false }} name="Popup" component={Popup} />
+          <Stack.Screen options={{ headerShown: false }} name="Popupdeconnection" component={Popupdeconnection} />
          
         
         
