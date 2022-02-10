@@ -5,12 +5,19 @@ import { Icon } from 'react-native-elements';
 import SearchBar from '../pages/Searchbar';
 import Profil from '../pages/Profil';
 import Home from "../pages/Home";
+import Reinitialisermdp from "../pages/Reinitialisermdp";
+import Popupdeconnection from "../pages/Popupdeconnection";
+import Popupmodif from "../pages/Popupmodif";
+import Popupcomptecreer from "../pages/Popupcomptecreer";
+import Inscription from "../pages/Inscription";
+
+
 
 const Tab = createBottomTabNavigator();
 
 const TabNavigator = () => {
   return (
-    <Tab.Navigator initialRouteName="Search" >
+<Tab.Navigator initialRouteName="Profil" >
       <Tab.Screen name="Rechercher" component={Home} 
         options={{ 
           headerShown: false, 
@@ -24,6 +31,11 @@ const TabNavigator = () => {
             }, 
         }} 
       />
+
+
+
+
+
       <Tab.Screen name="Profil" component={Profil} 
         options={{ 
           headerShown: true, 
@@ -40,6 +52,9 @@ const TabNavigator = () => {
           }
         }} 
       />
+
+
+
     </Tab.Navigator>
   );
 };
