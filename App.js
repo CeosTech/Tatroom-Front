@@ -12,7 +12,7 @@ import Inscription from "./pages/Inscription";
 import Connexion from "./pages/Connexion";
 import Menu from "./pages/Menu";
 import Menu2 from "./pages/Menu2";
-import Profil2 from "./pages/Profil2";
+
 import Profil from "./pages/Profil";
 import RendezVous from "./pages/RendezVous";
 import DescriptionClient from "./pages/DescriptionClient";
@@ -26,7 +26,7 @@ import Popupcomptecreer from "./pages/Popupcomptecreer";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const [isLogged, setIsLogged] = useState(true)
+  const [isLogged, setIsLogged] = useState(false)
 
   return (
     <NavigationContainer style={styles.container}>

@@ -81,7 +81,7 @@ const UselessTextInput = ({ navigation }) => {
         titleStyle={{
           fontWeight: 'bold',
         }}
-        onPress={() => navigation.navigate('Popupcomptecreer')}
+     
       />
       
         <View>
