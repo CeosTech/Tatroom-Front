@@ -18,9 +18,10 @@ import RendezVous from "./pages/RendezVous";
 import DescriptionClient from "./pages/DescriptionClient";
 import SearchBar from "./pages/Searchbar";
 import ProfilTatoueur from "./pages/ProfilTatoueur.js";
-
-
-
+import Reinitialisermdp from "./pages/Reinitialisermdp";
+import Popupdeconnection from "./pages/Popupdeconnection";
+import Popupmodif from "./pages/Popupmodif";
+import Popupcomptecreer from "./pages/Popupcomptecreer";
 
 const Stack = createNativeStackNavigator();
 
@@ -30,7 +31,7 @@ export default function App() {
   return (
     <NavigationContainer style={styles.container}>
       {isLogged ?
-        <Stack.Navigator initialRouteName="Connexion">
+        <Stack.Navigator initialRouteName="Profil">
 
           <Stack.Screen options={{ headerShown: true }} name="Presentation" component={Presentation} />
           <Stack.Screen
@@ -45,7 +46,9 @@ export default function App() {
             name="Inscription"
             component={Inscription}
           />
-          <Stack.Screen options={{ headerShown: false }} name="Connexion" component={Connexion} initialParams={{setIsLogged}} />
+      <Stack.Screen options={{ headerShown: false }} name="Profil" component={Profil} />
+      <Stack.Screen options={{ headerShown: false }} name="Connexion" component={Connexion} initialParams={{setIsLogged}} />
+
 
         </Stack.Navigator>
         :
