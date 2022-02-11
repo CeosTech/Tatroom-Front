@@ -31,7 +31,7 @@ export default function App() {
   return (
     <NavigationContainer style={styles.container}>
       {isLogged ?
-        <Stack.Navigator initialRouteName="Profil">
+        <Stack.Navigator initialRouteName="Connexion">
 
           <Stack.Screen options={{ headerShown: true }} name="Presentation" component={Presentation} />
           <Stack.Screen

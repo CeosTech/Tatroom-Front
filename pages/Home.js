@@ -29,37 +29,36 @@ const Stack = createNativeStackNavigator();
 export default function App() {
 
   return (
-<Stack.Navigator initialRouteName="SearchBar">
+    <Stack.Navigator initialRouteName="SearchBar">
 
-          <Stack.Screen options={{ headerShown: false }} name="Menu" component={Menu} />
-          <Stack.Screen
-            options={{
-              headerShown: true,
-              headerTitleAlign: 'center',
-              title: "Rechercher",
-              headerTitleStyle: {
-                fontWeight: 'bold',
-              },
-              headerStyle: {
-                borderBottomWidth: 0,
-              },
-            }}
-            name="Searchbar"
-            component={SearchBar}
-          />
-          <Stack.Screen options={{ headerShown: false }} name="Menu2" component={Menu2} />
-          <Stack.Screen options={{ headerShown: false }} name="Inscription" component={Inscription} />
-          <Stack.Screen options={{ headerShown: false }} name="Presentation" component={Presentation} />
-          <Stack.Screen options={{ headerShown: false }} name="Connexion" component={Connexion} />
-          <Stack.Screen options={{ headerShown: false }} name="DescriptionClient" component={DescriptionClient} />
-          <Stack.Screen options={{ headerShown: false }} name="SearchBar" component={SearchBar} />
-          <Stack.Screen options={{ headerShown: false }} name="Profil" component={Profil} />
-<Stack.Screen options={{ headerShown: false }} name="Popupdeconnection" component={Popupdeconnection} />
-<Stack.Screen options={{ headerShown: true }} name="ProfilTatoueur" component={ProfilTatoueur} />
-          
-          <Stack.Screen options={{ headerShown: false }} name="RendezVous" component={RendezVous} />
-          <Stack.Screen options={{ headerShown: false }} name="Favoris" component={Favoris} />
-        </Stack.Navigator>
+      <Stack.Screen options={{ headerShown: false }} name="Menu" component={Menu} />
+      <Stack.Screen
+        options={{
+          headerShown: true,
+          headerTitleAlign: 'center',
+          title: "Rechercher",
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+          headerStyle: {
+            borderBottomWidth: 0,
+          },
+        }}
+        name="SearchBar"
+        component={SearchBar}
+      />
+      <Stack.Screen options={{ headerShown: false }} name="Menu2" component={Menu2} />
+      <Stack.Screen options={{ headerShown: false }} name="Inscription" component={Inscription} />
+      <Stack.Screen options={{ headerShown: false }} name="Presentation" component={Presentation} />
+      <Stack.Screen options={{ headerShown: false }} name="Connexion" component={Connexion} />
+      <Stack.Screen options={{ headerShown: false }} name="DescriptionClient" component={DescriptionClient} />
+      <Stack.Screen options={{ headerShown: false }} name="Profil" component={Profil} />
+      <Stack.Screen options={{ headerShown: false }} name="Popupdeconnection" component={Popupdeconnection} />
+      <Stack.Screen options={{ headerShown: true }} name="ProfilTatoueur" component={ProfilTatoueur} />
+
+      <Stack.Screen options={{ headerShown: false }} name="RendezVous" component={RendezVous} />
+      <Stack.Screen options={{ headerShown: false }} name="Favoris" component={Favoris} />
+    </Stack.Navigator>
   );
 }
 
