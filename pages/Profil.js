@@ -2,6 +2,7 @@ import React from "react";
 import {View, SafeAreaView, StyleSheet, TextInput , Text} from "react-native";
 import { Icon , Button} from 'react-native-elements';
 
+import Popupdeconnection from "../components/Popupdeconnection";
 
 const UselessTextInput = () => {
   const [text, onChangeText] = React.useState("Texte");
@@ -11,9 +12,6 @@ const UselessTextInput = () => {
   return (
 
     <SafeAreaView style={styles.container}>
-      
-          
-      
       <Text style={styles.title}>PROFIL</Text>
       <TextInput
         style={styles.input}
@@ -70,12 +68,13 @@ const UselessTextInput = () => {
         onPress={() => Alert.alert('Simple Button pressed')}
       />
       
-      <Button
+      {/* <Button
         title="Se déconnecter"
         color="black"
         buttonStyle={{ backgroundColor: 'rgba(39, 39, 39, 1)' }}
         onPress={() => Alert.alert('Simple Button pressed')}
-      />
+      /> */}
+      <Popupdeconnection/>
     </SafeAreaView>
   );
 };

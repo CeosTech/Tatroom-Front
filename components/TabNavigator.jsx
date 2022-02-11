@@ -6,9 +6,6 @@ import SearchBar from '../pages/Searchbar';
 import Profil from '../pages/Profil';
 import Home from "../pages/Home";
 import Reinitialisermdp from "../pages/Reinitialisermdp";
-import Popupdeconnection from "../pages/Popupdeconnection";
-import Popupmodif from "../pages/Popupmodif";
-import Popupcomptecreer from "../pages/Popupcomptecreer";
 import Inscription from "../pages/Inscription";
 
 

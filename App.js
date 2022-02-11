@@ -19,9 +19,8 @@ import DescriptionClient from "./pages/DescriptionClient";
 import SearchBar from "./pages/Searchbar";
 import ProfilTatoueur from "./pages/ProfilTatoueur.js";
 import Reinitialisermdp from "./pages/Reinitialisermdp";
-import Popupdeconnection from "./pages/Popupdeconnection";
-import Popupmodif from "./pages/Popupmodif";
-import Popupcomptecreer from "./pages/Popupcomptecreer";
+
+
 
 const Stack = createNativeStackNavigator();
 
