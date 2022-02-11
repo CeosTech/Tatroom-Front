@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Alert, Modal, StyleSheet, Text, Pressable, View } from "react-native";
+import { Button } from "react-native-elements";
 
-const App = () => {
-  const [modalVisible, setModalVisible] = useState(false);
+
+const App = (props) => {
+  const [modalVisible, setModalVisible] = useState(0);
+
+  useEffect(() => {
+    console.log(props)
+})
+
+
   return (
     <View style={styles.centeredView}>
       <Modal
@@ -34,12 +42,32 @@ const App = () => {
           </View>
         </View>
       </Modal>
-      <Pressable
+      {/* <Pressable
         style={[styles.button, styles.buttonOpen]}
         onPress={() => setModalVisible(true)}
       >
-        <Text style={styles.textStyle}>enregistrer les modification</Text>
-      </Pressable>
+        <Text style={styles.textStyle}>modifier mon profil</Text>
+      </Pressable> */}
+    
+    <Button
+        title="modifier mon profil"
+        buttonStyle={{ 
+        backgroundColor: 'black',
+        borderWidth: 2,
+        borderColor: 'white',
+        borderRadius: 30,
+      }}
+        containerStyle={{
+          width: 260,
+          marginVertical: 10,
+          marginHorizontal: 50,
+        }}
+        titleStyle={{
+          fontWeight: 'bold',
+        }}
+        onPress={() => setModalVisible(true)}
+        />
+
     </View>
   );
 };

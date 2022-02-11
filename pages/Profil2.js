@@ -3,7 +3,7 @@ import { StyleSheet, View} from 'react-native';
 import { Text, useTheme } from 'react-native-elements';
 import { Avatar, Button, Icon } from 'react-native-elements';
 
-
+import Popupmodif from "../components/Popupmodif";
 
 type TextComponentProps = {};
 const TextComponent: React.FunctionComponent<TextComponentProps> = () => {
@@ -40,7 +40,7 @@ const TextComponent: React.FunctionComponent<TextComponentProps> = () => {
            
             <Text>John doe, San Francisco</Text>
 
-            <Button
+            {/* <Button
                     title="Modifier profil"
                     titleStyle={{ fontWeight: '700', color: "black" }}
                     buttonStyle={{
@@ -54,7 +54,7 @@ const TextComponent: React.FunctionComponent<TextComponentProps> = () => {
                         height: 45,
                         marginLeft: "20%",
                     }}
-                />
+                /> */}
 
                   <Icon name= 'heart'
                    type='font-awesome'
@@ -62,9 +62,6 @@ const TextComponent: React.FunctionComponent<TextComponentProps> = () => {
                    color='black'
                   />
                    
-                   
-           
-
             <Button
                     title="Ajouter Des favoris"
                     titleStyle={{ fontWeight: '700', color: "black" }}
@@ -78,14 +75,10 @@ const TextComponent: React.FunctionComponent<TextComponentProps> = () => {
                         height: 45,
                         marginLeft: "20%",
                     }}
-                />
-
-
-
-           </View>
-          
-           
-    </View>
+                      />
+                    <Popupmodif/>
+                    </View>
+                     </View>
   );
 };
 

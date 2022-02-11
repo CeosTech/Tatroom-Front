@@ -19,19 +19,18 @@ import DescriptionClient from "./pages/DescriptionClient";
 import SearchBar from "./pages/Searchbar";
 import ProfilTatoueur from "./pages/ProfilTatoueur.js";
 import Reinitialisermdp from "./pages/Reinitialisermdp";
-import Popupdeconnection from "./pages/Popupdeconnection";
-import Popupmodif from "./pages/Popupmodif";
-import Popupcomptecreer from "./pages/Popupcomptecreer";
+
+
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const [isLogged, setIsLogged] = useState(false)
+  const [isLogged, setIsLogged] = useState(true)
 
   return (
     <NavigationContainer style={styles.container}>
       {isLogged ?
-        <Stack.Navigator initialRouteName="Profil">
+        <Stack.Navigator initialRouteName="Connexion">
 
           <Stack.Screen options={{ headerShown: true }} name="Presentation" component={Presentation} />
           <Stack.Screen

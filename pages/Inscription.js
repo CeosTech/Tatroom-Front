@@ -2,10 +2,13 @@ import React from "react";
 import { SafeAreaView, StyleSheet, TextInput ,  Text, View } from "react-native";
 import {  Button } from 'react-native-elements';
 
+import Popupcomptecreer from "../components/Popupcomptecreer";
+
+
 const Separator = () => (
   <View style={styles.separator} />
 );
-const UselessTextInput = ({ navigation }) => {
+const UselessTextInput = ({ navigation, route }) => {
   const [text, onChangeText] = React.useState("Texte");
   const [number, onChangeNumber] = React.useState(null);
 
@@ -66,7 +69,7 @@ const UselessTextInput = ({ navigation }) => {
         keyboardType="numeric"
       
       />
-      <Button
+      {/* <Button
         title="S'inscrire"
         buttonStyle={{ 
         backgroundColor: 'black',
@@ -82,10 +85,10 @@ const UselessTextInput = ({ navigation }) => {
         titleStyle={{
           fontWeight: 'bold',
         }}
-        onPress={() => navigation.navigate('Popupcomptecreer')}
-      />
+        /> */}
       
         <View>
+        <Popupcomptecreer/>
         <Text style={styles.title} onPress={() => navigation.navigate('Connexion')}>
             Déjà un compte? Connexion
            
