@@ -29,7 +29,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
 
   return (
-    <Stack.Navigator initialRouteName="Favoris">
+<Stack.Navigator initialRouteName="SearchBar">
 
       <Stack.Screen options={{ headerShown: false }} name="Menu" component={Menu} />
       <Stack.Screen
