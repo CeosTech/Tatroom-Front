@@ -81,9 +81,7 @@ const UselessTextInput = ({ navigation }) => {
         titleStyle={{
           fontWeight: 'bold',
         }}
-       
-        
-        
+     
       />
       
         <View>
