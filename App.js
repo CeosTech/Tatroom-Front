@@ -25,11 +25,11 @@ import Reinitialisermdp from "./pages/Reinitialisermdp";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const [isLogged, setIsLogged] = useState(true)
+  const [isLogged, setIsLogged] = useState(false)
 
   return (
     <NavigationContainer style={styles.container}>
-      {isLogged ?
+      {!isLogged ?
         <Stack.Navigator initialRouteName="Connexion">
 
           <Stack.Screen options={{ headerShown: true }} name="Presentation" component={Presentation} />

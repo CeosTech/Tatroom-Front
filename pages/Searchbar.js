@@ -22,29 +22,28 @@ const SwitchComponent = ({ navigation }) => {
   return (
     <View style={styles.view}>
       <Text style={styles.title}>Rechercher un tatoueur par ville</Text>
-      
+
       <SearchBar
+        placeholder="Recherchez par ville ..."
+        onChangeText={setSearch}
+        value={search}
+        containerStyle={{
+          marginBottom: 10,
+          backgroundColor: "white",
+          borderTop: 0,
+          borderBottom: 0,
+          width: "100%",
+          //height: "100%",
+          //height: "100%",
 
-placeholder="Recherchez par ville ..."
-onChangeText={setSearch}
-value={search}
-containerStyle={{
-  marginBottom: 10,
-  backgroundColor: "white",
-  borderTop: 0,
-  borderBottom: 0,
-  //height: "100%",
-  //height: "100%",
-
-}}//
-inputContainerStyle={{
-  backgroundColor: "white",
-  border: "3px solid #000000",
-  borderBottomWidth: 3,
-  borderRadius: 20,
-
-
-}}          />  
+        }}//
+        inputContainerStyle={{
+          backgroundColor: "white",
+          border: "3px solid #000000",
+          borderBottomWidth: 3,
+          borderRadius: 20,
+          witdh: "100%",
+        }} />
       <Tile
         imageSrc={image5}
         title="soho Ink"
@@ -55,9 +54,9 @@ inputContainerStyle={{
         width={310}
         onPress={() => navigation.navigate('ProfilTatoueur')}
 
-        
+
       />
-   
+
 
     </View>
   );
@@ -71,7 +70,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     //height: "100vh",
 
-    
+
   },
   title: {
     color: 'black',
