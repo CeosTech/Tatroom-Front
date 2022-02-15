@@ -16,7 +16,7 @@ export default function Presentation({navigation }) {
     return (
             <View style={styles.container}>
                  <FadeIn>
-                    <Image source={require("../../assets/img/logo.png")} style={styles.image} />
+                    <Image source={require("../../assets/images/logo.png")} style={styles.image} />
                 </FadeIn>
             </View>
 
@@ -26,7 +26,7 @@ export default function Presentation({navigation }) {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#424D41',
+        backgroundColor: 'black',
         flex: 1,
         alignItems: 'center',
         justifyContent: "center",

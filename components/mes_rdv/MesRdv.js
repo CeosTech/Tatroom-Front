@@ -128,20 +128,20 @@ const calendarStyle = {
 
   /* HEADER */
   calendarBackground: '#F1EFE5',
-  agendaKnobColor: '#C2A77D', // SLIDER
+  agendaKnobColor: 'black', // SLIDER
   /* - Intérieur -*/
   textSectionTitleColor: 'black', // Nom des jours
   dayTextColor: 'black', // numéro des jours
   textSectionTitleDisabledColor: '#d9e1e8', // jours désactivé
-  selectedDayBackgroundColor: '#C2A77D', // Selection rond
+  selectedDayBackgroundColor: 'black', // Selection rond
   selectedDayTextColor: 'white', // Date sélectionnée blanc
-  todayTextColor: '#C2A77D',
-  dotColor: '#C2A77D', // point d'évènement
+  todayTextColor: 'black',
+  dotColor: 'black', // point d'évènement
   textDayFontWeight: 400,
 
   /* CONTENT */
-  backgroundColor: '#C2A77D',
-  indicatorColor: 'black', // icon chargement
+  backgroundColor: 'black',
+  indicatorColor: 'white', // icon chargement
   agendaDayTextColor: "black",
   agendaDayNumColor: 'black',
   agendaTodayColor: 'white',

@@ -80,7 +80,7 @@ export default function DevisAttente({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <Image source={require("../../assets/img/logo_inscription.png")} style={styles.image} />
+            <Image source={require("../../assets/images/logo_inscription.png")} style={styles.image} />
             <Text style={styles.title}>Mes RDV à confirmer</Text>
             <ScrollView>
                 {/* Utilisez la fonction .map() pour faire tout les devis à confirmer */}
@@ -98,7 +98,7 @@ export default function DevisAttente({ navigation }) {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#F1EFE5',
+        backgroundColor: 'white',
         flex: 1,
         alignItems: 'center',
         width: "100%",
