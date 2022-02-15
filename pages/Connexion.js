@@ -57,7 +57,7 @@ useEffect(() => {
           marginVertical: 10,
           marginHorizontal: 70,
         }}
-        onPress={() => route.params.setIsLogged(false)}
+        onPress={() => route.params.setIsLogged(true)}
       />
       <Text style={styles.title}>
          OU
