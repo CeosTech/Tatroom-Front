@@ -28,9 +28,9 @@ const DescriptionTatoueur = () => {
         <View style={styles.container}>
             <Avatar
                 size={100}
-                containerStyle={{backgroundColor: "white"}}
+                containerStyle={{backgroundColor: "red"}}
                 rounded
-                source={'https://cdn.pixabay.com/photo/2019/11/03/20/11/portrait-4599553__340.jpg'}
+                source={{uri:'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&q=80&fm=jpg'}}
             />
 
             <Text style={styles.title}>{firstname + " " + lastname}</Text>
