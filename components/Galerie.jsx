@@ -17,12 +17,12 @@ const Galerie = (props) => {
                 style={styles.list}
                 numColumns={2}
                 keyExtractor={(e) => e}
-                renderItem={({ item }) => (
-                    <Image
-                        source={item.includes("https") ?{uri: "https://resize-parismatch.lanmedia.fr/img/var/news/storage/images/paris-match/brouillons/tatoo-bon-568327/5268632-1-fre-FR/Tatoo-bon.jpg"} : item }
+                renderItem={({ item }) => {
+                    return(<Image
+                        source={item.toString().includes("https") ?{uri: "https://resize-parismatch.lanmedia.fr/img/var/news/storage/images/paris-match/brouillons/tatoo-bon-568327/5268632-1-fre-FR/Tatoo-bon.jpg"} : item }
                         containerStyle={styles.item}
-                    />
-                )}
+                    />)
+                }}
             />
         </View>
     )
@@ -31,8 +31,7 @@ const Galerie = (props) => {
 const styles = StyleSheet.create({
     container: {
         //alignItems: "center",
-        height: "50%",
-        width: "100vw",
+        flex: 1,
         justifyContent: "center",
     },
     title: {
@@ -44,12 +43,12 @@ const styles = StyleSheet.create({
         color: "white",
     },
     list: {
-        width: '100%',
+        width: "1300%",
         /* backgroundColor: 'black', */
     },
     item: {
         aspectRatio: 1,
-        width: '100%',
+        width: 300,
         flex: 1,
         marginLeft: "2%",
         marginRight: "2%",
