@@ -31,16 +31,12 @@ import MenuTatoueur from "../components/menu_tatoueur/MenuTatoueur";
 import Inscription from "../components/inscription/Inscription";
 import Connexion from "../components/connexion/Connexion";
 
-
-
-
-
 const Stack = createNativeStackNavigator();
 
 export default function App() {
 
   return (
-    <Stack.Navigator initialRouteName="Connexion">
+    <Stack.Navigator initialRouteName="SearchBar">
 
       <Stack.Screen options={{ headerShown: false }} name="Menu" component={Menu} />
       <Stack.Screen

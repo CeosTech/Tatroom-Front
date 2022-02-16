@@ -56,7 +56,7 @@ export default function App() {
 
         </Stack.Navigator>
         :
-        <TabNavigator />
+        <TabNavigator setIsLogged={{setIsLogged}} />
       }
     </NavigationContainer>
   );

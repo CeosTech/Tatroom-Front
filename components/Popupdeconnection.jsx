@@ -1,13 +1,29 @@
 import React, { useState, useEffect } from "react";
 import { Alert, Modal, StyleSheet, Text, Pressable, View } from "react-native";
 import { Button } from "react-native-elements";
-
+import * as SecureStore from 'expo-secure-store';
 
 
 const App = (props) => {
   const [modalVisible, setModalVisible] = useState(0);
 
+  async function disconnect(){
+    const res = await SecureStore.deleteItemAsync("access")
+    if(res){
+      console.log("Déconnecter")
+      setModalVisible(!modalVisible)
+      props.setIsLogged.setIsLogged(false)
+      //navigation.navigate("Rechercher")
+      return;
+    }
+    console.log("Autre")
+    setModalVisible(!modalVisible)
+    props.setIsLogged.setIsLogged(false)
+    navigation.navigate("Rechercher")
+  }
+
   useEffect(() => {
+    console.log("===== POPUP =======")
     console.log(props)
 })
 
@@ -34,7 +50,7 @@ const App = (props) => {
             
               <Pressable
               style={[styles.button, styles.buttonClose]}
-              onPress={() => setModalVisible(!modalVisible)}
+              onPress={() => disconnect()}
             >
               <Text style={styles.textStyle}>Confirmer</Text>
             </Pressable>
