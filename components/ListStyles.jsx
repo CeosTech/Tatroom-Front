@@ -56,12 +56,9 @@ const styles = StyleSheet.create({
         justifyContent: "space-evenly",
         alignItems: "center",
     },
-    innerContainer: {
-        border: "2px solid white",
-    },
     title: {
         color: "white",
-        fontSize: "1.5em",
+        fontSize: 25,
         fontWeight: "bold",
     },
     text: {

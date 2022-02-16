@@ -172,11 +172,11 @@ const styles = StyleSheet.create({
         marginRight: '30%',
     },
     title1: {
-        fontSize: "1.5em",
+        fontSize: 20,
         fontWeight: "bold",
     },
     title2: {
-        fontSize: "1em",
+        fontSize: 15,
         fontWeight: "bold",
     },
     img: {

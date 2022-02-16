@@ -5,6 +5,7 @@ import * as React from "react";
 import { useEffect, useState } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import 'react-native-gesture-handler';
 
 import TabNavigator from "./components/TabNavigator"
 import Presentation from "./pages/Presentation";
@@ -26,6 +27,10 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   const [isLogged, setIsLogged] = useState(false)
+
+  useEffect(()=>{
+    console.log(isLogged)
+  })
 
   return (
     <NavigationContainer style={styles.container}>

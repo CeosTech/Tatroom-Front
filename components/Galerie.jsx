@@ -35,12 +35,9 @@ const styles = StyleSheet.create({
         width: "100vw",
         justifyContent: "center",
     },
-    innerContainer: {
-        border: "2px solid white",
-    },
     title: {
         color: "white",
-        fontSize: "1.5em",
+        fontSize: 20,
         fontWeight: "bold",
     },
     text: {

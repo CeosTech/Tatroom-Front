@@ -113,7 +113,7 @@ align: {
   title:{ 
     color: 'black',
     textAlign: 'center',
-    fontSize:  '2em' ,
+    fontSize:  20,
     fontWeight: 'bold',
   },
 });

@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     },
     title: {
         color: "white",
-        fontSize: "1.5em",
+        fontSize: 25,
         fontWeight: "bold",
     },
     text: {

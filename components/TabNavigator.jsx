@@ -43,7 +43,7 @@ const TabNavigator = () => {
           headerTitleStyle: {
             color: "white",
             headerTitleAlign: 'center',
-            fontSize: "2em",
+            fontSize: 30,
           }
         }}
       />

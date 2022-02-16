@@ -30,7 +30,6 @@ import MesInfos from "../components/mes_infos/MesInfos";
 import MenuTatoueur from "../components/menu_tatoueur/MenuTatoueur";
 import Inscription from "../components/inscription/Inscription";
 import Connexion from "../components/connexion/Connexion";
-import FadeIn from "../components/animates/FadeIn";
 
 
 
@@ -70,7 +69,6 @@ export default function App() {
       <Stack.Screen options={{ headerShown: false }} name="DevisItems" component={DevisItems} />
       <Stack.Screen options={{ headerShown: false }} name="MesInfos" component={MesInfos} />
       <Stack.Screen options={{ headerShown: false }} name="MenuTatoueur" component={MenuTatoueur} />
-      <Stack.Screen options={{ headerShown: false }} name="FadeIn" component={FadeIn} />
 
 
 
