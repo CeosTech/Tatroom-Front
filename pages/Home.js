@@ -18,10 +18,22 @@ import Reinitialisermdp from "./Reinitialisermdp";
 //import Popupdeconnection from "./Popupdeconnection";
 //import Popupmodif from "./Popupmodif";
 //import Popupcomptecreer from "./Popupcomptecreer";
-import Inscription from "./Inscription";
-import Presentation from "./Presentation";
-import Connexion from "./Connexion";
+// import Inscription from "./Inscription";
+// import Presentation from "./Presentation";
+// import Connexion from "./Connexion";
 import Favoris from "./Favoris";
+import MesRdv from "../components/mes_rdv/MesRdv";
+import DevisAttente from "../components/mes_rdv_confirmer/DevisAttente";
+import DevisItems from "../components/mes_rdv_confirmer/DevisItems";
+import Presentation from "../components/presentation/Presentation";
+import MesInfos from "../components/mes_infos/MesInfos";
+import MenuTatoueur from "../components/menu_tatoueur/MenuTatoueur";
+import Inscription from "../components/inscription/Inscription";
+import Connexion from "../components/connexion/Connexion";
+import FadeIn from "../components/animates/FadeIn";
+
+
+
 
 
 const Stack = createNativeStackNavigator();
@@ -29,7 +41,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
 
   return (
-    <Stack.Navigator initialRouteName="SearchBar">
+    <Stack.Navigator initialRouteName="Connexion">
 
       <Stack.Screen options={{ headerShown: false }} name="Menu" component={Menu} />
       <Stack.Screen
@@ -53,6 +65,16 @@ export default function App() {
       <Stack.Screen options={{ headerShown: false }} name="Connexion" component={Connexion} />
       <Stack.Screen options={{ headerShown: false }} name="DescriptionClient" component={DescriptionClient} />
       <Stack.Screen options={{ headerShown: false }} name="Profil" component={Profil} />
+      <Stack.Screen options={{ headerShown: false }} name="MesRdv" component={MesRdv} />
+      <Stack.Screen options={{ headerShown: false }} name="DevisAttente" component={DevisAttente} />
+      <Stack.Screen options={{ headerShown: false }} name="DevisItems" component={DevisItems} />
+      <Stack.Screen options={{ headerShown: false }} name="MesInfos" component={MesInfos} />
+      <Stack.Screen options={{ headerShown: false }} name="MenuTatoueur" component={MenuTatoueur} />
+      <Stack.Screen options={{ headerShown: false }} name="FadeIn" component={FadeIn} />
+
+
+
+
       <Stack.Screen 
       options={{
           headerShown: true,

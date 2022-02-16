@@ -21,7 +21,7 @@ export default function MenuTatoueur({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <Image source={require("../../assets/img/logo_inscription.png")} style={styles.image} />
+            <Image source={require("../../assets/images/logo.png")} style={styles.image} />
             <Text style={styles.title}>Mon compte tatoueur</Text>
             <Button
                 icon={{
@@ -32,7 +32,7 @@ export default function MenuTatoueur({ navigation }) {
                 title="Mes informations"
                 containerStyle={styles.button}
                 buttonStyle={{
-                    backgroundColor: '#C2A77D'
+                    backgroundColor: 'black'
                 }}
             />
             <Button
@@ -45,7 +45,7 @@ export default function MenuTatoueur({ navigation }) {
                 title="Mes rendez-vous"
                 containerStyle={styles.button1}
                 buttonStyle={{
-                    backgroundColor: '#C2A77D'
+                    backgroundColor: 'black'
                 }}
             />
             <Button
@@ -58,7 +58,7 @@ export default function MenuTatoueur({ navigation }) {
                 title="Mes devis à confirmer"
                 containerStyle={styles.button1}
                 buttonStyle={{
-                    backgroundColor: '#C2A77D'
+                    backgroundColor: 'black'
                 }}
             />
             <Button
@@ -71,7 +71,7 @@ export default function MenuTatoueur({ navigation }) {
                 title="Historique des devis"
                 containerStyle={styles.button1}
                 buttonStyle={{
-                    backgroundColor: '#C2A77D'
+                    backgroundColor: 'black'
                 }}
             />
 
@@ -85,7 +85,7 @@ export default function MenuTatoueur({ navigation }) {
                 title="Se déconnecter"
                 containerStyle={styles.button_disconnect}
                 buttonStyle={{
-                    backgroundColor: '#9E3030'
+                    backgroundColor: 'black'
                 }}
             />
         </View>
@@ -96,7 +96,7 @@ export default function MenuTatoueur({ navigation }) {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#F1EFE5',
+        backgroundColor: 'white',
         flex: 1,
         alignItems: 'center',
         width: "100%",

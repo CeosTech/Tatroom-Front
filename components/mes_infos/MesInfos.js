@@ -190,7 +190,7 @@ export default function Inscription() {
         <SafeAreaView style={styles.container}>
             <ScrollView style={{ flex: 1, padding_bottom: 100, width: "100%", }}>
                 <View style={styles.inside}>
-                    <Image source={require("../../assets/img/logo_inscription.png")} style={styles.image} />
+                    <Image source={require("../../assets/images/logo_inscription.png")} style={styles.image} />
                     <Text style={styles.title}>Mes informations</Text>
                     {/* Information du tatoueur */}
                     <Avatar
@@ -366,7 +366,7 @@ export default function Inscription() {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#F1EFE5',
+        backgroundColor: 'white',
         flex: 1,
         alignItems: 'center',
         justifyContent: "center",
@@ -390,7 +390,8 @@ const styles = StyleSheet.create({
         resizeMode: "contain",
         height: "10%",
         width: "50%",
-    },
+        
+        },
     input: {
         borderWidth: 1,
         borderColor: 'black',
@@ -421,9 +422,9 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         paddingVertical: 12,
         paddingHorizontal: 32,
-        borderRadius: 4,
+        borderRadius: 10,
         elevation: 3,
-        backgroundColor: '#424d41',
+        backgroundColor: 'black',
         width: "80%",
     },
     text: {

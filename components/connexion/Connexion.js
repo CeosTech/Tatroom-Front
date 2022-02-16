@@ -39,7 +39,7 @@ export default function Connexion({navigation }) {
             <ScrollView style={{ flex: 1, padding_bottom: 100, width: "100%", }}>
 
                 <View style={styles.inside}>
-                    <Image source={require("../../assets/img/logo_inscription.png")} style={styles.image} />
+                    <Image source={require("../../assets/images/logo.png")} style={styles.image} />
                     <View style={styles.inside}>
                         <Text style={styles.title}> Se connecter en tant que tatoueur </Text>
                         <Input
@@ -76,7 +76,7 @@ export default function Connexion({navigation }) {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#F1EFE5',
+        backgroundColor: 'white',
         flex: 1,
         alignItems: 'center',
         justifyContent: "center",
@@ -100,8 +100,8 @@ const styles = StyleSheet.create({
     image: {
         resizeMode: "contain",
         height: "20%",
-        width: "100%",
-        marginLeft: "-35%",
+        width: "60%",
+        marginLeft: "-5%",
     },
     input: {
         borderWidth: 1,
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 32,
         borderRadius: 4,
         elevation: 3,
-        backgroundColor: '#424d41',
+        backgroundColor: 'black',
         marginTop: "10%",
         width: "50%",
     },
@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 32,
         borderRadius: 4,
         elevation: 3,
-        backgroundColor: '#424d41',
+        backgroundColor: 'black',
         width: "50%",
     },
     text: {
