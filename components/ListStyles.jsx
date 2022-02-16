@@ -20,7 +20,7 @@ const ListStyles = (props) => {
                 }}
                 containerStyle={{ 
                     marginBottom: 20, 
-                    width: "90vw", 
+                    width: 900, 
                     border: "none",
                     backgroundColor: "none",
                 }}
