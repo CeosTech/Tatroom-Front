@@ -28,6 +28,7 @@ const DescriptionTatoueur = () => {
         <View style={styles.container}>
             <Avatar
                 size={100}
+                containerStyle={{backgroundColor: "white"}}
                 rounded
                 source={'https://cdn.pixabay.com/photo/2019/11/03/20/11/portrait-4599553__340.jpg'}
             />
