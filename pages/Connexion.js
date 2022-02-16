@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { SafeAreaView, StyleSheet, TextInput, Text, View } from "react-native";
 import { Button, withTheme } from "react-native-elements";
 import axios from 'axios';
+import * as SecureStore from 'expo-secure-store';
 
 const Separator = () => <View style={styles.separator}></View>;
 
@@ -12,29 +13,64 @@ const UselessTextInput = ({ navigation, route }) => {
 
   const URL_API = "https://tatroom-test.herokuapp.com/";
 
+  /**
+   * Connect to the app with username and password
+   * @returns 
+   */
   async function connection() {
-    console.log(username)
-    console.log(password)
     if(username === "" || password === ""){
       return;
     }
-    await axios.post(`${URL_API}shops/authentification/`, {
+    const result = await axios.post(`${URL_API}users/authentification/`, {
       username: username,
       password: password
     }).then((res) => {
-      console.log(res)
+      saveToken(res.data.token)
+      route.params.setIsLogged(true)
     })
     .catch((err) =>{
       console.log(err)
     })
   }
+  
+  /**
+   * Stock the token locally
+   * @param {value} 
+   */
+  async function saveToken(value){
+    await SecureStore.setItemAsync("access", value)
+  }
+
+  /**
+   * check if there is a value for the keys given
+   * @param {key} 
+   * @returns boolean
+   */
+  async function getValueFor(key) {
+    console.log("BP SECURE STORE 1")
+    let result = await SecureStore.getItemAsync(key);
+    console.log(result)
+    if (result) {
+      console.log("============SECURE STORE==================")
+      console.log("Acess key: " + result)
+      return true
+    } else {
+      console.log("FALSE ====")
+      return false
+    }
+  }
 
 
 
-  useEffect(() => {
-    console.log("======================");
-    console.log(navigation);
-    console.log(route.params);
+  useEffect(async() => {
+    console.log("======= CONNEXION ===========")
+    if(await getValueFor("access")){
+      console.log("BP 1")
+      route.params.setIsLogged(true)
+    } else {
+      console.log("BP 2")
+      route.params.setIsLogged(false)
+    }
   });
 
   return (

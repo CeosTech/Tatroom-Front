@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: '10%',
     marginBottom: "10%",
-    fontSize: '2em',
+    fontSize: 20,
   },
   tile: {
 

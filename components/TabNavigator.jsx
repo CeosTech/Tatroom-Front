@@ -10,7 +10,7 @@ import Home from "../pages/Home";
 
 const Tab = createBottomTabNavigator();
 
-const TabNavigator = () => {
+const TabNavigator = ({setIsLogged}) => {
   return (
     <Tab.Navigator initialRouteName="Rechercher" >
       <Tab.Screen name="Rechercher" component={Home}
@@ -43,9 +43,11 @@ const TabNavigator = () => {
           headerTitleStyle: {
             color: "white",
             headerTitleAlign: 'center',
-            fontSize: "2em",
+            fontSize: 30,
           }
         }}
+
+        initialParams={{currentCity: "Paris", setIsLogged}}
       />
 
 
