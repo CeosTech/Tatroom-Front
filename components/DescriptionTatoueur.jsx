@@ -49,7 +49,7 @@ const DescriptionTatoueur = () => {
                         borderRadius: 5,
                     }}
                     containerStyle={{
-                        width: 400,
+                        width: "50%",
                         height: 45,
                         marginRight: "5%",
                     }}
@@ -65,7 +65,7 @@ const DescriptionTatoueur = () => {
                         borderRadius: 5,
                     }}
                     containerStyle={{
-                        width: 400,
+                        width: "50%",
                         height: 45,
                         marginLeft: "10%",
                     }}
