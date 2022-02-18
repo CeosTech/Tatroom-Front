@@ -12,6 +12,8 @@ import image7 from "../assets/images/galerie/7.jpeg";
 
 
 
+
+
 const SwitchComponent = ({ navigation }) => {
   const [search, setSearch] = useState("");
 
@@ -47,15 +49,36 @@ const SwitchComponent = ({ navigation }) => {
       <Tile
         imageSrc={image5}
         title="soho Ink"
-        titleStyle={{ fontSize: 25, color: "black", backgroundColor: "white" }}
+        titleStyle={{ fontSize: 25, color: "white", backgroundColor: "transparent" }}
+        featured
+        caption="Paris"
+        activeOpacity={1}
+        width={310}
+        onPress={() => navigation.navigate('ProfilTatoueur')}
+/>
+        <Tile
+        imageSrc={image6}
+        title="soho Ink"
+        titleStyle={{ fontSize: 25, color: "white", backgroundColor: "transparent" }}
         featured
         caption="Paris"
         activeOpacity={1}
         width={310}
         onPress={() => navigation.navigate('ProfilTatoueur')}
 
+/>
+<Tile
+        imageSrc={image7}
+        title="soho Ink"
+        titleStyle={{ fontSize: 25, color: "white", backgroundColor: "black" }}
+        featured
+        caption="Paris"
+        activeOpacity={1}
+        width={310}
+        onPress={() => navigation.navigate('ProfilTatoueur')}
 
-      />
+/>
+
 
 
     </View>

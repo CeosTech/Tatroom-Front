@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { SafeAreaView, StyleSheet, TextInput, Text, View } from "react-native";
+import { SafeAreaView, StyleSheet, TextInput, Text, View, Image } from "react-native";
 import { Button, withTheme } from "react-native-elements";
 import axios from 'axios';
 import * as SecureStore from 'expo-secure-store';
@@ -60,8 +60,6 @@ const UselessTextInput = ({ navigation, route }) => {
     }
   }
 
-
-
   useEffect(async() => {
     console.log("======= CONNEXION ===========")
     if(await getValueFor("access")){
@@ -77,7 +75,8 @@ const UselessTextInput = ({ navigation, route }) => {
     <SafeAreaView>
       <Separator />
       <Separator />
-      <Text style={styles.baseText}>CONNEXION</Text>
+      <Image source={require("../assets/images/logo.png")} style={styles.image} />
+      <Text style={styles.baseText}>SE CONNECTER</Text>
 
       <TextInput
         style={styles.input}
@@ -160,6 +159,15 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     height: "100vh",
   },
+
+  image: {
+    resizeMode: "contain",
+    height: "10%",
+    width: "50%",
+    marginLeft: "25%",
+    marginBottom: "5%",
+},
+
 });
 
 export default UselessTextInput;

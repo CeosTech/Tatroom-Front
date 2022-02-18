@@ -190,7 +190,7 @@ export default function Inscription() {
         <SafeAreaView style={styles.container}>
             <ScrollView style={{ flex: 1, padding_bottom: 100, width: "100%", }}>
                 <View style={styles.inside}>
-                    <Image source={require("../../assets/images/logo_inscription.png")} style={styles.image} />
+                    <Image source={require("../../assets/images/logo.png")} style={styles.image} />
                     <Text style={styles.title}>Mes informations</Text>
                     {/* Information du tatoueur */}
                     <Avatar

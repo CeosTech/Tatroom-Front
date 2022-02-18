@@ -15,7 +15,7 @@ const UselessTextInput = ({ navigation, route }) => {
   return (
     
     <SafeAreaView style={styles.container}>
-     
+    
       <Text style={styles.baseText}>INSCRIPTION</Text>
 
       <TextInput
