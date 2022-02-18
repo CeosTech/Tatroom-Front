@@ -16,7 +16,7 @@ export default function DevisAttente(props, { navigation }) {
 
     const [description, setDescription] = useState("");
     const [disponibilite, setDisponibilite] = useState("");
-    const [idee, setIdee] = useState("../../assets/images/logo_inscription.png")
+    const [idee, setIdee] = useState("../../assets/images/logo.png")
 
     const [popUp, setPopUp] = useState(false)
     const [popUpR, setPopUpR] = useState(false)

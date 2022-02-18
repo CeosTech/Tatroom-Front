@@ -114,12 +114,13 @@ const styles = StyleSheet.create({
         textAlign: "center",
         marginTop: "5%",
         fontWeight: "bold",
+        marginBottom: "5%",
     },
     image: {
         resizeMode: "contain",
-        height: "10%",
-        width: "100%",
-        marginLeft: "-50%",
+        height: "30%",
+        width: "70%",
+        marginLeft: "-4%",
     },
     input: {
         borderWidth: 1,

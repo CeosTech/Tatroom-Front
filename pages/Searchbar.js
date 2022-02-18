@@ -23,6 +23,7 @@ const SwitchComponent = ({ navigation }) => {
 
   return (
     <View style={styles.view}>
+      <ScrollView style={{ paddingVertical: 10 }}>
       <Text style={styles.title}>Rechercher un tatoueur par ville</Text>
 
       <SearchBar
@@ -70,7 +71,7 @@ const SwitchComponent = ({ navigation }) => {
 <Tile
         imageSrc={image7}
         title="soho Ink"
-        titleStyle={{ fontSize: 25, color: "white", backgroundColor: "black" }}
+        titleStyle={{ fontSize: 25, color: "white", backgroundColor: "transparent"}}
         featured
         caption="Paris"
         activeOpacity={1}
@@ -80,7 +81,7 @@ const SwitchComponent = ({ navigation }) => {
 />
 
 
-
+</ScrollView>
     </View>
   );
 };
@@ -104,7 +105,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   tile: {
-
+   
   },
 });
 

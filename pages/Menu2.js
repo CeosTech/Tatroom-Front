@@ -28,6 +28,8 @@ const Buttons: React.FunctionComponent<ButtonsComponentProps> = () => {
                   type: 'font-awesome',
                   size: 15,
                   color: 'black',
+                
+                  
                 }}
                 iconLeft
                 iconContainerStyle={{ marginLeft: -45, marginRight: 80 }}
